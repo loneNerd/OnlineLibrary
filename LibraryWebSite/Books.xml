@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Inventory>
+  <BookList>
+    <Book>
+      <Name>1984 (Signet Classics)</Name>
+      <Author>George Orwell</Author>
+      <Description>Written 70 years ago, 1984 was George Orwell's chilling prophecy about the future. And while 1984 has come and gone, his dystopian vision of a government that will do anything to control the narrative is timelier than ever...</Description>
+      <PublicationDate>01-01-1961</PublicationDate>
+      <Publisher>Signet Classic</Publisher>
+      <Pages>328</Pages>
+      <ISBN10>9780451524935</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>2001: a Space Odyssey (Space Odyssey Series)</Name>
+      <Author>Arthur C. Clarke</Author>
+      <Description>From the savannas of Africa at the dawn of mankind to the rings of Saturn as man ventures to the outer rim of our solar system, 2001: A Space Odyssey is a journey unlike any other.</Description>
+      <PublicationDate>01-09-2000</PublicationDate>
+      <Publisher>Ace</Publisher>
+      <Pages>296</Pages>
+      <ISBN10>9780451457998</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>A Canticle for Leibowitz</Name>
+      <Author>Walter M. Miller Jr.</Author>
+      <Description>In a nightmarish ruined world slowly awakening to the light after sleeping in darkness, the infant rediscoveries of science are secretly nourished by cloistered monks dedicated to the study and preservation of the relics and writings of the blessed Saint Isaac Leibowitz. From here the story spans centuries of ignorance, violence, and barbarism, viewing through a sharp, satirical eye the relentless progression of a human race damned by its inherent humanness to recelebrate its grand foibles and repeat its grievous mistakes. Seriously funny, stunning, and tragic, eternally fresh, imaginative, and altogether remarkable, A Canticle for Leibowitz retains its ability to enthrall and amaze. It is now, as it always has been, a masterpiece.</Description>
+      <PublicationDate>09-05-2006</PublicationDate>
+      <Publisher>EOS</Publisher>
+      <Pages>334</Pages>
+      <ISBN10>0060892994</ISBN10>
+      <InStock>6</InStock>
+    </Book>
+    <Book>
+      <Name>A Game of Thrones (A Song of Ice and Fire, Book 1)</Name>
+      <Author>George R. R. Martin</Author>
+      <Description>Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King's Landing. There Eddard Stark of Winterfell rules in Robert's name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse�unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season.</Description>
+      <PublicationDate>22-03-2011</PublicationDate>
+      <Publisher>Bantam</Publisher>
+      <Pages>864</Pages>
+      <ISBN10>9780553593716</ISBN10>
+      <InStock>6</InStock>
+    </Book>
+    <Book>
+      <Name>A Wizard of Earthsea (1) (The Earthsea Cycle)</Name>
+      <Author>Le Guin, Ursula K.</Author>
+      <Description>Ged was the greatest sorcerer in Earthsea, but in his youth he was the reckless Sparrowhawk. In his hunger for power and knowledge, he tampered with long-held secrets and loosed a terrible shadow upon the world. This is the tumultuous tale of his testing, how he mastered the mighty words of power, tamed an ancient dragon, and crossed death's threshold to restore the balance.</Description>
+      <PublicationDate>11-09-2012</PublicationDate>
+      <Publisher>HMH Books for Young Readers</Publisher>
+      <Pages>320</Pages>
+      <ISBN10>0547773749</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>A Wrinkle in Time (Time Quintet)</Name>
+      <Author>Madeleine L'Engle</Author>
+      <Description>It was a dark and stormy night; Meg Murry, her small brother Charles Wallace, and her mother had come down to the kitchen for a midnight snack when they were upset by the arrival of a most disturbing stranger.</Description>
+      <PublicationDate>01-05-2007</PublicationDate>
+      <Publisher>Square Fish</Publisher>
+      <Pages>256</Pages>
+      <ISBN10>0312367546</ISBN10>
+      <InStock>7</InStock>
+    </Book>
+    <Book>
+      <Name>Altered Carbon (Takeshi Kovacs)</Name>
+      <Author>Richard K. Morgan</Author>
+      <Description>In the twenty-fifth century, humankind has spread throughout the galaxy, monitored by the watchful eye of the U.N. While divisions in race, religion, and class still exist, advances in technology have redefined life itself. Now, assuming one can afford the expensive procedure, a person's consciousness can be stored in a cortical stack at the base of the brain and easily downloaded into a new body (or "sleeve") making death nothing more than a minor blip on a screen.</Description>
+      <PublicationDate>04-03-2003</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>375</Pages>
+      <ISBN10>0345457684</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>American Gods</Name>
+      <Author>Neil Gaiman</Author>
+      <Description>Shadow is a man with a past. But now he wants nothing more than to live a quiet life with his wife and stay out of trouble. Until he learns that she's been killed in a terrible accident.</Description>
+      <PublicationDate>01-04-2002</PublicationDate>
+      <Publisher>HarperTorch</Publisher>
+      <Pages>624</Pages>
+      <ISBN10>0380789035</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>Among Others (Hugo Award Winner - Best Novel)</Name>
+      <Author>Jo Walton</Author>
+      <Description>Among Others is at once the compelling story of a young woman struggling to escape a troubled childhood, a brilliant diary of first encounters with the great novels of modern fantasy and SF, and a spellbinding tale of escape from ancient enchantment.</Description>
+      <PublicationDate>03-01-2012</PublicationDate>
+      <Publisher>Tor Books</Publisher>
+      <Pages>304</Pages>
+      <ISBN10>0765331721</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Ancillary Justice (Imperial Radch)</Name>
+      <Author>Ann Leckie</Author>
+      <Description>On a remote, icy planet, the soldier known as Breq is drawing closer to completing her quest. Once, she was the Justice of Toren - a colossal starship with an artificial intelligence linking thousands of soldiers in the service of the Radch, the empire that conquered the galaxy. Now, an act of treachery has ripped it all away, leaving her with one fragile human body, unanswered questions, and a burning desire for vengeance.</Description>
+      <PublicationDate>01-10-2013</PublicationDate>
+      <Publisher>Orbit</Publisher>
+      <Pages>416</Pages>
+      <ISBN10>031624662X</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+
+    <!--10 Books-->
+
+    <Book>
+      <Name>ANNIHILATION (The Southern Reach Trilogy)</Name>
+      <Author>JEFF VANDERMEER</Author>
+      <Description>Area X has been cut off from the rest of the continent for decades. Nature has reclaimed the last vestiges of human civilization. The first expedition returned with reports of a pristine, Edenic landscape; the second expedition ended in mass suicide; the third expedition in a hail of gunfire as its members turned on one another. The members of the eleventh expedition returned as shadows of their former selves, and within weeks, all had died of cancer.</Description>
+      <PublicationDate>04-02-2014</PublicationDate>
+      <Publisher>Farrar Straus and Giroux</Publisher>
+      <Pages>208</Pages>
+      <ISBN10>0374104093</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>Assassin's Apprentice (The Farseer Trilogy, Book 1)</Name>
+      <Author>Robin Hobb</Author>
+      <Description>Young Fitz is the bastard son of the noble Prince Chivalry, raised in the shadow of the royal court by his father's gruff stableman. He is treated as an outcast by all the royalty except the devious King Shrewd, who has him secretly tutored in the arts of the assassin. For in Fitz's blood runs the magic Skill�and the darker knowledge of a child raised with the stable hounds and rejected by his family.</Description>
+      <PublicationDate>01-03-1996</PublicationDate>
+      <Publisher>Spectra</Publisher>
+      <Pages>448</Pages>
+      <ISBN10>055357339X</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Blood Music</Name>
+      <Author>Greg Bear</Author>
+      <Description>This Hugo and Nebula Award finalist follows present-day events in which the fears concerning the nuclear annihilation of the world subsided after the Cold War and the fear of chemical warfare spilled over into the empty void it left behind. An amazing breakthrough in genetic engineering made by Vergil Ulam is considered too dangerous for further research, but rather than destroy his work, he injects himself with his creation and walks out of his lab, unaware of just how his actions will change the world. Author Greg Bear�s treatment of the traditional tale of scientific hubris is both suspenseful and a compelling portrait of a new intelligence emerging amongst us, irrevocably changing our world.</Description>
+      <PublicationDate>20-05-2014</PublicationDate>
+      <Publisher>Open Road Media Sci-Fi and Fantasy</Publisher>
+      <Pages>282</Pages>
+      <ISBN10>1497637023</ISBN10>
+      <InStock>6</InStock>
+    </Book>
+    <Book>
+      <Name>Brave New World</Name>
+      <Author>Aldous Huxley</Author>
+      <Description>Brave New World is a searching vision of an unequal, technologically-advanced future where humans are genetically bred, socially indoctrinated, and pharmaceutically anesthetized to passively uphold an authoritarian ruling order�all at the cost of our freedom, full humanity, and perhaps also our souls. "A genius [who] who spent his life decrying the onward march of the Machine" (The New Yorker), Huxley was a man of incomparable talents: equally an artist, a spiritual seeker, and one of history�s keenest observers of human nature and civilization. Brave New World, his masterpiece, has enthralled and terrified millions of readers, and retains its urgent relevance to this day as both a warning to be heeded as we head into tomorrow and as thought-provoking, satisfying work of literature. Written in the shadow of the rise of fascism during the 1930s, Brave New World likewise speaks to a 21st-century world dominated by mass-entertainment, technology, medicine and pharmaceuticals, the arts of persuasion, and the hidden influence of elites.</Description>
+      <PublicationDate>18-10-2006</PublicationDate>
+      <Publisher>Harper Perennial</Publisher>
+      <Pages>288</Pages>
+      <ISBN10>0060850523</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Childhood's End: A Novel</Name>
+      <Author>Arthur C. Clarke</Author>
+      <Description>Without warning, giant silver ships from deep space appear in the skies above every major city on Earth. Manned by the Overlords, in fifty years, they eliminate ignorance, disease, and poverty. Then this golden age ends--and then the age of Mankind begins....</Description>
+      <PublicationDate>12-05-1987</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>224</Pages>
+      <ISBN10>0345347951</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Cloud Atlas: A Novel</Name>
+      <Author>David Mitchell</Author>
+      <Description>Cloud Atlas begins in 1850 with Adam Ewing, an American notary voyaging from the Chatham Isles to his home in California. Along the way, Ewing is befriended by a physician, Dr. Goose, who begins to treat him for a rare species of brain parasite.... Abruptly, the action jumps to Belgium in 1931, where Robert Frobisher, a disinherited bisexual composer, contrives his way into the household of an infirm maestro who has a beguiling wife and a nubile daughter.... From there we jump to the West Coast in the 1970s and a troubled reporter named Luisa Rey, who stumbles upon a web of corporate greed and murder that threatens to claim her life.... And onward, with dazzling virtuosity, to an inglorious present-day England; to a Korean superstate of the near future where neocapitalism has run amok; and, finally, to a postapocalyptic Iron Age Hawaii in the last days of history.</Description>
+      <PublicationDate>17-08-2004</PublicationDate>
+      <Publisher>Random House Trade Paperbacks</Publisher>
+      <Pages>528</Pages>
+      <ISBN10>9780375507250</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Daughter of the Blood (Black Jewels, Book 1)</Name>
+      <Author>Anne Bishop</Author>
+      <Description>Seven hundred years ago, a Black Widow witch saw an ancient prophecy come to life in her web of dreams and visions. Now the Dark Kingdom readies itself for the arrival of its Queen, a Witch who will wield more power than even the High Lord of Hell himself. But she is still young, still open to influence�and corruption.</Description>
+      <PublicationDate>01-03-1998</PublicationDate>
+      <Publisher>Roc</Publisher>
+      <Pages>416</Pages>
+      <ISBN10>0451456718</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>Dhalgren</Name>
+      <Author>Samuel R. Delany</Author>
+      <Description>Bellona is a city at the dead center of the United States. Something has happened there.... The population has fled. Madmen and criminals wander the streets. Strange portents appear in the cloud-covered sky. And into this disaster zone comes a young man�poet, lover, and adventurer�known only as the Kid. Tackling questions of race, gender, and sexuality.</Description>
+      <PublicationDate>15-05-2001</PublicationDate>
+      <Publisher>Vintage</Publisher>
+      <Pages>816</Pages>
+      <ISBN10>0375706682</ISBN10>
+      <InStock>6</InStock>
+    </Book>
+    <Book>
+      <Name>Do Androids Dream of Electric Sheep?: The inspiration for the films Blade Runner and Blade Runner 2049</Name>
+      <Author>Philip K. Dick</Author>
+      <Description>By 2021, the World War has killed millions, driving entire species into extinction and sending mankind off-planet. Those who remain covet any living creature, and for people who can't afford one, companies built incredibly realistic simulacra: horses, birds, cats, sheep. They've even built humans. Immigrants to Mars receive androids so sophisticated they are indistinguishable from true men or women. Fearful of the havoc these artificial humans can wreak, the government bans them from Earth. Driven into hiding, unauthorized androids live among human beings, undetected. Rick Deckard, an officially sanctioned bounty hunter, is commissioned to find rogue androids and 'retire' them. But when cornered, androids fight backwith lethal force.</Description>
+      <PublicationDate>28-05-1996</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>240</Pages>
+      <ISBN10>0345404475</ISBN10>
+      <InStock>7</InStock>
+    </Book>
+    <Book>
+      <Name>Doomsday Book</Name>
+      <Author>Connie Willis</Author>
+      <Description>For Kivrin, preparing an on-site study of one of the deadliest eras in humanity's history was as simple as receiving inoculations against the diseases of the fourteenth century and inventing an alibi for a woman traveling alone. For her instructors in the twenty-first century, it meant painstaking calculations and careful monitoring of the rendezvous location where Kivrin would be received.</Description>
+      <PublicationDate>01-08-1993</PublicationDate>
+      <Publisher>Spectra</Publisher>
+      <Pages>592</Pages>
+      <ISBN10>0553562738</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+
+    <!--20 Books-->
+
+    <Book>
+      <Name>Dragonflight (Dragonriders of Pern - Volume 1)</Name>
+      <Author>Anne McCaffrey</Author>
+      <Description>On a beautiful world called Pern, an ancient way of life is about to come under attack from a myth that is all too real. Lessa is an outcast survivor her parents murdered, her birthright stolen a strong young woman who has never stopped dreaming of revenge. But when an ancient threat to Pern reemerges, Lessa will rise upon the back of a great dragon with whom she shares a telepathic bond more intimate than any human connection. Together, dragon and rider will fly... and Pern will be changed forever.</Description>
+      <PublicationDate>12-05-1986</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>320</Pages>
+      <ISBN10>0345335465</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Dune</Name>
+      <Author>Frank Herbert</Author>
+      <Description>Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the "spice" melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...</Description>
+      <PublicationDate>01-09-1990</PublicationDate>
+      <Publisher>Ace</Publisher>
+      <Pages>896</Pages>
+      <ISBN10>0441172717</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Ender's Game (The Ender Quintet)</Name>
+      <Author>Orson Scott Card</Author>
+      <Description>In order to develop a secure defense against a hostile alien race's next attack, government agencies breed child geniuses and train them as soldiers. A brilliant young boy, Andrew "Ender" Wiggin lives with his kind but distant parents, his sadistic brother Peter, and the person he loves more than anyone else, his sister Valentine. Peter and Valentine were candidates for the soldier-training program but didn't make the cut--young Ender is the Wiggin drafted to the orbiting Battle School for rigorous military training.</Description>
+      <PublicationDate>15-07-1994</PublicationDate>
+      <Publisher>Tor Science Fiction</Publisher>
+      <Pages>352</Pages>
+      <ISBN10>0812550706</ISBN10>
+      <InStock>7</InStock>
+    </Book>
+    <Book>
+      <Name>Fahrenheit 451</Name>
+      <Author>Ray Bradbury</Author>
+      <Description>Guy Montag is a fireman. In his world, where television rules and literature is on the brink of extinction, firemen start fires rather than put them out. His job is to destroy the most illegal of commodities, the printed book, along with the houses in which they are hidden.</Description>
+      <PublicationDate>10-01-2012</PublicationDate>
+      <Publisher>Simon and Schuster</Publisher>
+      <Pages>249</Pages>
+      <ISBN10>9781451673319</ISBN10>
+      <InStock>1</InStock>
+    </Book>
+    <Book>
+      <Name>Foreigner: 10th Anniversary Edition</Name>
+      <Author>C. J. Cherryh</Author>
+      <Description>It had been nearly five centuries since the starship Phoenix, lost in space and desperately searching for the nearest G5 star, had encountered the planet of the atevi. On this alien world, law was kept by the use of registered assassination, alliances were defined by individual loyalties not geographical borders, and war became inevitable once humans and one faction of atevi established a working relationship. It was a war that humans had no chance of winning on this planet so many light-years from home.</Description>
+      <PublicationDate>7-12-2004</PublicationDate>
+      <Publisher>DAW</Publisher>
+      <Pages>432</Pages>
+      <ISBN10>0756402514</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Frankenstein</Name>
+      <Author>Mary Shelley</Author>
+      <Description>The story of Victor Frankenstein's terrible creation and the havoc it caused has enthralled generations of readers and inspired countless writers of horror and suspense. Considering the novel's enduring success, it is remarkable that it began merely as a whim of Lord Byron's.</Description>
+      <PublicationDate>01-01-1994</PublicationDate>
+      <Publisher>Dover Publications</Publisher>
+      <Pages>166</Pages>
+      <ISBN10>0486282112</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch</Name>
+      <Author>Neil Gaiman</Author>
+      <Description>So the armies of Good and Evil are amassing, Atlantis is rising, frogs are falling, tempers are flaring. Everything appears to be going according to Divine Plan. Except a somewhat fussy angel and a fast-living demon both of whom have lived amongst Earth's mortals since The Beginning and have grown rather fond of the lifestyle are not actually looking forward to the coming Rapture.</Description>
+      <PublicationDate>28-11-2006</PublicationDate>
+      <Publisher>William Morrow</Publisher>
+      <Pages>512</Pages>
+      <ISBN10>0060853980</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Graceling</Name>
+      <Author>Kristin Cashore</Author>
+      <Description>Graceling tells the story of the vulnerable-yet-strong Katsa, who is smart and beautiful and lives in the Seven Kingdoms where selected people are born with a Grace, a special talent that can be anything at all. Katsa's Grace is killing. As the king's niece, she is forced to use her extreme skills as his brutal enforcer. Until the day she meets Prince Po, who is Graced with combat skills, and Katsa's life begins to change. She never expects to become Po's friend. She never expects to learn a new truth about her own Grace'or about a terrible secret that lies hidden far away... a secret that could destroy all seven kingdoms with words alone.</Description>
+      <PublicationDate>07-09-2009</PublicationDate>
+      <Publisher>HMH Books for Young Readers</Publisher>
+      <Pages>512</Pages>
+      <ISBN10>9780547258300</ISBN10>
+      <InStock>6</InStock>
+    </Book>
+    <Book>
+      <Name>Grass (Arbai)</Name>
+      <Author>Sheri S. Tepper</Author>
+      <Description>Here is a novel as original as the breathtaking, unspoiled world for which it is named, a place where all appears to be in idyllic balance. Generations ago, humans fled to the cosmic anomaly known as Grass. Over time, they evolved a new and intricate society. But before humanity arrived, another species had already claimed Grass for its own. It, too, had developed a culture ...</Description>
+      <PublicationDate>01-03-1993</PublicationDate>
+      <Publisher>Spectra</Publisher>
+      <Pages>476</Pages>
+      <ISBN10>055376246X</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>Guilty Pleasures (Anita Blake, Vampire Hunter: Book 1)</Name>
+      <Author>Laurell K. Hamilton</Author>
+      <Description>Anita Blake is small, dark, and dangerous. Her turf is the city of St. Louis. Her job: re-animating the dead and killing the undead who take things too far. But when the city's most powerful vampire asks her to solve a series of vicious slayings, Anita must confront her greatest fear her undeniable attraction to master vampire Jean-Claude, one of the creatures she is sworn to destroy...</Description>
+      <PublicationDate>24-09-2002</PublicationDate>
+      <Publisher>Berkley</Publisher>
+      <Pages>272</Pages>
+      <ISBN10>9780515134490</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+
+    <!--30 Books-->
+
+    <Book>
+      <Name>H. P. Lovecraft: Tales (LOA #155) (Library of America)</Name>
+      <Author>H. P. Lovecraft</Author>
+      <Description>In such later works as "The Call of Cthulhu," "The Whisperer in Darkness," "At the Mountains of Madness," "The Shadow Over Innsmouth," and "The Shadow Out of Time," Lovecraft developed his own nightmarish mythology in which encounters with ancient, pitiless extraterrestrial intelligences wreak havoc on hapless humans who only gradually begin to glimpse "terrifying vistas of reality, and our frightful position therein." Moving from old New England towns haunted by occult pasts to Antarctic wastes that disclose appalling secrets, Lovecraft's tales continue to exert a dread fascination.</Description>
+      <PublicationDate>03-02-2005</PublicationDate>
+      <Publisher>Library of America</Publisher>
+      <Pages>850</Pages>
+      <ISBN10>1931082723</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Harry Potter and the Sorcerer's Stone</Name>
+      <Author>J.K. Rowling</Author>
+      <Description>Harry Potter has no idea how famous he is. That's because he's being raised by his miserable aunt and uncle who are terrified Harry will learn that he's really a wizard, just as his parents were. But everything changes when Harry is summoned to attend an infamous school for wizards, and he begins to discover some clues about his illustrious birthright. From the surprising way he is greeted by a lovable giant, to the unique curriculum and colorful faculty at his unusual school, Harry finds himself drawn deep inside a mystical world he never knew existed and closer to his own noble destiny.</Description>
+      <PublicationDate>01-09-1998</PublicationDate>
+      <Publisher>Scholastic</Publisher>
+      <Pages>309</Pages>
+      <ISBN10>0439708184</ISBN10>
+      <InStock>8</InStock>
+    </Book>
+    <Book>
+      <Name>How to Live Safely in a Science Fictional Universe: A Novel</Name>
+      <Author>Charles Yu</Author>
+      <Description>Every day in Minor Universe 31 people get into time machines and try to change the past. That's where Charles Yu, time travel technician, steps in. He helps save people from themselves. Literally. When he's not taking client calls, Yu visits his mother and searches for his father, who invented time travel and then vanished. The key to locating his father may be found in a book. It's called How to Live Safely in a Science Fictional Universe, and somewhere inside it is information that will help him. It may even save his life.</Description>
+      <PublicationDate>28-06-2011</PublicationDate>
+      <Publisher>Vintage</Publisher>
+      <Pages>256</Pages>
+      <ISBN10>0307739457</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Howl's Moving Castle</Name>
+      <Author>Diana Wynne Jones</Author>
+      <Description>Sophie has the great misfortune of being the eldest of three daughters, destined to fail miserably should she ever leave home to seek her fate. But when she unwittingly attracts the ire of the Witch of the Waste, Sophie finds herself under a horrid spell that transforms her into an old lady. Her only chance at breaking it lies in the ever-moving castle in the hills: the Wizard Howl's castle. To untangle the enchantment, Sophie must handle the heartless Howl, strike a bargain with a fire demon, and meet the Witch of the Waste head-on. Along the way, she discovers that there's far more to Howl and herself than first meets the eye.</Description>
+      <PublicationDate>22-04-2008</PublicationDate>
+      <Publisher>Greenwillow Books</Publisher>
+      <Pages>448</Pages>
+      <ISBN10>0061478784</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Hyperion (Hyperion Cantos)</Name>
+      <Author>Dan Simmons</Author>
+      <Description>On the world called Hyperion, beyond the reach of galactic law, waits a creature called the Shrike. There are those who worship it. There are those who fear it. And there are those who have vowed to destroy it. In the Valley of the Time Tombs, where huge, brooding structures move backward through time, the Shrike waits for them all.</Description>
+      <PublicationDate>01-03-1990</PublicationDate>
+      <Publisher>Spectra</Publisher>
+      <Pages>481</Pages>
+      <ISBN10>0553283685</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>I Am Legend</Name>
+      <Author>Richard Matheson</Author>
+      <Description>An incurable plague has mutated every other man, woman, and child into bloodthirsty, nocturnal creatures who are determined to destroy him. By day, he is a hunter, stalking the infected monstrosities through the abandoned ruins of civilization. By night, he barricades himself in his home and prays for dawn...</Description>
+      <PublicationDate>30-10-2007</PublicationDate>
+      <Publisher>Tor Books</Publisher>
+      <Pages>320</Pages>
+      <ISBN10>9780765357151</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>I, Robot</Name>
+      <Author>Isaac Asimov</Author>
+      <Description>I, Robot, the first and most widely read book in Asimov's Robot series, forever changed the world's perception of artificial intelligence. Here are stories of robots gone mad, of mind-reading robots, and robots with a sense of humor. Of robot politicians, and robots who secretly run the world all told with the dramatic blend of science fact and science fiction that has become Asimov's trademark.</Description>
+      <PublicationDate>29-04-2008</PublicationDate>
+      <Publisher>Spectra</Publisher>
+      <Pages>256</Pages>
+      <ISBN10>055338256X</ISBN10>
+      <InStock>6</InStock>
+    </Book>
+    <Book>
+      <Name>Interview with the Vampire</Name>
+      <Author>Anne Rice</Author>
+      <Description>Here are the confessions of a vampire. Hypnotic, shocking, and chillingly erotic, this is a novel of mesmerizing beauty and astonishing force a story of danger and flight, of love and loss, of suspense and resolution, and of the extraordinary power of the senses. It is a novel only Anne Rice could write.</Description>
+      <PublicationDate>13-09-1991</PublicationDate>
+      <Publisher>Ballantine Books</Publisher>
+      <Pages>368</Pages>
+      <ISBN10>0345337662</ISBN10>
+      <InStock>1</InStock>
+    </Book>
+    <Book>
+      <Name>Jonathan Strange and Mr. Norrell: A Novel</Name>
+      <Author>Susanna Clarke</Author>
+      <Description>At the dawn of the nineteenth century, two very different magicians emerge to change England's history. In the year 1806, with the Napoleonic Wars raging on land and sea, most people believe magic to be long dead in England-until the reclusive Mr Norrell reveals his powers, and becomes a celebrity overnight.</Description>
+      <PublicationDate>01-08-2006</PublicationDate>
+      <Publisher>Tor Books</Publisher>
+      <Pages>1024</Pages>
+      <ISBN10>0765356155</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Kindred</Name>
+      <Author>Octavia E. Butler</Author>
+      <Description>Dana, a modern black woman, is celebrating her twenty-sixth birthday with her new husband when she is snatched abruptly from her home in California and transported to the antebellum South. Rufus, the white son of a plantation owner, is drowning, and Dana has been summoned to save him. Dana is drawn back repeatedly through time to the slave quarters, and each time the stay grows longer, more arduous, and more dangerous until it is uncertain whether or not Dana's life will end, long before it has a chance to begin.</Description>
+      <PublicationDate>01-01-2003</PublicationDate>
+      <Publisher>Beacon Press</Publisher>
+      <Pages>264</Pages>
+      <ISBN10>0807083690</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+
+    <!--40 Books-->
+
+    <Book>
+      <Name>Kushiel's Dart (Kushiel's Legacy)</Name>
+      <Author>Jacqueline Carey</Author>
+      <Description>In a kingdom born of angels, Phedre is an anguisette, cursed or blessed to find pleasure in pain. Sold to the Court of Night Blooming Flowers, her fate as a beautiful but anonymous courtesan was sealed. Her bond was purchased by the nobleman Anafiel Delauney, who recognized the scarlet mote in Phedre's eye as the rare mark of one touched by a powerful deity. Under Delauney's patronage she is trained in history, politics, language, and the use of body and mind as the ultimate weapon of subterfuge in a dangerous game of courtly intrigue.</Description>
+      <PublicationDate>13-01-2015</PublicationDate>
+      <Publisher>Tor Books</Publisher>
+      <Pages>656</Pages>
+      <ISBN10>0765379724</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Lord Foul's Bane (The Chronicles of Thomas Covenant the Unbeliever, Book 1)</Name>
+      <Author>Stephen R. Donaldson</Author>
+      <Description>He called himself Thomas Covenant the Unbeliever, because he dared not believe in this strange alternate world on which he suddenly found himself. Yet the Land tempted him. He had been sick; now he seemed better than ever before. Through no fault of his own, he had been outcast, unclean, a pariah. Now he was regarded as a reincarnation of the Land's greatest hero Berek Halfhand armed with the mystic power of White Gold. That power alone could protect the Lords of the Land from the ancient evil of the Despiser, Lord Foul. Except that Covenant had no idea how to use that power...</Description>
+      <PublicationDate>12-06-1987</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>496</Pages>
+      <ISBN10>0345348656</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Neuromancer</Name>
+      <Author>William Gibson</Author>
+      <Description>Case was the sharpest data-thief in the matrix until he crossed the wrong people and they crippled his nervous system, banishing him from cyberspace. Now a mysterious new employer has recruited him for a last-chance run at an unthinkably powerful artificial intelligence. With a dead man riding shotgun and Molly, a mirror-eyed street-samurai, to watch his back, Case is ready for the adventure that upped the ante on an entire genre of fiction.</Description>
+      <PublicationDate>01-07-1984</PublicationDate>
+      <Publisher>Ace</Publisher>
+      <Pages>271</Pages>
+      <ISBN10>0441569595</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Nights at the Circus</Name>
+      <Author>Angela Carter</Author>
+      <Description>Sophi Fevvers the toast of Europe's capitals, courted by the Prince of Wales, painted by Toulouse-Lautrec is an aerialiste extraordinaire, star of Colonel Kearney's circus. She is also part woman, part swan. Jack Walser, an American journalist, is on a quest to discover Fevvers's true identity: Is she part swan or all fake? Dazzled by his love for Fevvers, and desperate for the scoop of a lifetime, Walser joins the circus on its tour. The journey takes him and the reader on an intoxicating trip through turn-of-the-century London, St. Petersburg, and Siberia a tour so magical that only Angela Carter could have created it.</Description>
+      <PublicationDate>04-03-1986</PublicationDate>
+      <Publisher>Penguin Books</Publisher>
+      <Pages>304</Pages>
+      <ISBN10>0140077030</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Old Man's War</Name>
+      <Author>John Scalzi</Author>
+      <Description>John Perry did two things on his 75th birthday. First he visited his wife's grave. Then he joined the army. The good news is that humanity finally made it into interstellar space. The bad news is that planets fit to live on are scarce?and alien races willing to fight us for them are common. So: we fight. To defend Earth, and to stake our own claim to planetary real estate. Far from Earth, the war has been going on for decades: brutal, bloody, unyielding.</Description>
+      <PublicationDate>15-01-2007</PublicationDate>
+      <Publisher>Tor Science Fiction</Publisher>
+      <Pages>318</Pages>
+      <ISBN10>0765348276</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Outlander</Name>
+      <Author>Diana Gabaldon</Author>
+      <Description>Scottish Highlands, 1945. Claire Randall, a former British combat nurse, is just back from the war and reunited with her husband on a second honeymoon when she walks through a standing stone in one of the ancient circles that dot the British Isles. Suddenly she is a Sassenach an "outlander" in a Scotland torn by war and raiding clans in the year of Our Lord... 1743.</Description>
+      <PublicationDate>02-06-1992</PublicationDate>
+      <Publisher>Dell</Publisher>
+      <Pages>850</Pages>
+      <ISBN10>0440212561</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Pawn of Prophecy (Belgariad)</Name>
+      <Author>David Eddings</Author>
+      <Description>Long ago, so the Storyteller claimed, the evil God Torak sought dominion and drove men and Gods to war. But Belgarath the Sorcerer led men to reclaim the Orb that protected men of the West. So long as it lay at Riva, the prophecy went, men would be safe.</Description>
+      <PublicationDate>13-01-1986</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>262</Pages>
+      <ISBN10>0345335511</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Perdido Street Station (Bas-Lag)</Name>
+      <Author>China Mieville</Author>
+      <Description>Beneath the towering bleached ribs of a dead, ancient beast lies New Crobuzon, a squalid city where humans, Re-mades, and arcane races live in perpetual fear of Parliament and its brutal militia. The air and rivers are thick with factory pollutants and the strange effluents of alchemy, and the ghettos contain a vast mix of workers, artists, spies, junkies, and whores. In New Crobuzon, the unsavory deal is stranger to none�not even to Isaac, a brilliant scientist with a penchant for Crisis Theory.</Description>
+      <PublicationDate>27-02-2001</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>710</Pages>
+      <ISBN10>0345443020</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Ready Player One: A Novel</Name>
+      <Author>Ernest Cline</Author>
+      <Description>In the year 2045, reality is an ugly place. The only time Wade Watts really feels alive is when he's jacked into the OASIS, a vast virtual world where most of humanity spends their days.</Description>
+      <PublicationDate>05-06-2012</PublicationDate>
+      <Publisher>Broadway Books</Publisher>
+      <Pages>400</Pages>
+      <ISBN10>0307887448</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Red Mars (Mars Trilogy)</Name>
+      <Author>Kim Stanley Robinson</Author>
+      <Description>For centuries, the barren, desolate landscape of the red planet has beckoned to humankind. Now a group of one hundred colonists begins a mission whose ultimate goal is to transform Mars into a more Earthlike planet. They will place giant satellite mirrors in Martian orbit to reflect light to the surface. Black dust sprinkled on the polar caps will capture warmth and melt the ice. And massive tunnels drilled into the mantle will create stupendous vents of hot gases. But despite these ambitious goals, there are some who would fight to the death to prevent Mars from ever being changed.</Description>
+      <PublicationDate>01-11-1993</PublicationDate>
+      <Publisher>Spectra</Publisher>
+      <Pages>572</Pages>
+      <ISBN10>0553560735</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+
+    <!--50 Books-->
+
+    <Book>
+      <Name>Red Rising</Name>
+      <Author>Pierce Brown</Author>
+      <Description>Darrow is a Red, a member of the lowest caste in the color-coded society of the future. Like his fellow Reds, he works all day, believing that he and his people are making the surface of Mars livable for future generations. Yet he toils willingly, trusting that his blood and sweat will one day result in a better world for his children.</Description>
+      <PublicationDate>01-01-2014</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>416</Pages>
+      <ISBN10>034553980X</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>Riddle-Master</Name>
+      <Author>Patricia A. McKillip</Author>
+      <Description>It is considered her most enduring and beloved work. Now it is collected in one volume for the first time the epic journeys of a young prince in a strange land, where wizards have long since vanished... but where magic is waiting to be reborn.</Description>
+      <PublicationDate>01-03-1999</PublicationDate>
+      <Publisher>Ace</Publisher>
+      <Pages>592</Pages>
+      <ISBN10>0441005969</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Ringworld: A Novel</Name>
+      <Author>Larry Niven</Author>
+      <Description>Four travelers come to the ringworld... Louis Wu: human and old; bored with having lived too fully for far too many years. Seeking a challenge, and all too capable of handling it. Nessus: a trembling coward, a puppeteer with a built-in survival pattern of nonviolence. Except that this particular puppeteer is insane. Teela Brown: human; a wide-eyed youngster with no allegiances, no experience, no abilities. And all the luck in the world. Speaker-To-Animals: kzin; large, orange-furred, and carnivorous. And one of the most savage life-forms known in the galaxy. Why did these disparate individuals come together? How could they possibly function together? And where, in the name of anything sane, were they headed?</Description>
+      <PublicationDate>12-09-1985</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>352</Pages>
+      <ISBN10>0070999005997</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Sabriel (Old Kingdom)</Name>
+      <Author>Garth Nix</Author>
+      <Description>Since childhood, Sabriel has lived outside the walls of the Old Kingdom, away from the power of Free Magic, and away from the Dead who refuse to stay dead. But now her father, the Abhorson, is missing, and Sabriel must cross into that world to find him. With Mogget, whose feline form hides a powerful, perhaps malevolent spirit, and Touchstone, a young Charter Mage, Sabriel travels deep into the Old Kingdom. There she confronts an evil that threatens much more than her life and comes face-to-face with her own hidden destiny....</Description>
+      <PublicationDate>11-08-1997</PublicationDate>
+      <Publisher>HarperTeen</Publisher>
+      <Pages>496</Pages>
+      <ISBN10>0064471837</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Sandman Slim: A Novel</Name>
+      <Author>Richard Kadrey</Author>
+      <Description>Sandman Slim has arrived a wild and weird, edge-of-your-seat supernatural roller-coaster rider that propels author Richard Kadrey to the forefront of the fantasy, thriller, and a host of other literary genres. This spellbinding, utterly remarkable tale of a vengeful magician/hitman's return from hell is part H.P. Lovecraft, part Christopher Moore, part Jim Butcher, and totally, unabashedly dark, twisted, and hilarious.</Description>
+      <PublicationDate>02-09-2014</PublicationDate>
+      <Publisher>Harper Voyager</Publisher>
+      <Pages>416</Pages>
+      <ISBN10>0061714356</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Slaughterhouse-Five: A Novel (Modern Library 100 Best Novels)</Name>
+      <Author>Kurt Vonnegut</Author>
+      <Description>Slaughterhouse-Five, an American classic, is one of the world's great antiwar books. Centering on the infamous firebombing of Dresden, Billy Pilgrim's odyssey through time reflects the mythic journey of our own fractured lives as we search for meaning in what we fear most.</Description>
+      <PublicationDate>12-01-1999</PublicationDate>
+      <Publisher>Dial Press Trade Paperback</Publisher>
+      <Pages>288</Pages>
+      <ISBN10>0812988523</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Snow Crash</Name>
+      <Author>Neal Stephenson</Author>
+      <Description>In reality, Hiro Protagonist delivers pizza for Uncle Enzo's CosoNostra Pizza Inc., but in the Metaverse he's a warrior prince. Plunging headlong into the enigma of a new computer virus that's striking down hackers everywhere, he races along the neon-lit streets on a search-and-destroy mission for the shadowy virtual villain threatening to bring about infocalypse.</Description>
+      <PublicationDate>01-01-2000</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>440</Pages>
+      <ISBN10>0553380958</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Solaris</Name>
+      <Author>Stanislaw Lem</Author>
+      <Description>When psychologist Kris Kelvin arrives at the planet Solaris to study the ocean that covers its surface, he finds himself confronting a painful memory embodied in the physical likeness of a past lover. Kelvin learns that he is not alone in this and that other crews examining the planet are plagued with their own repressed and newly real memories. Could it be, as Solaris scientists speculate, that the ocean may be a massive neural center creating these memories, for a reason no one can identify?</Description>
+      <PublicationDate>01-01-2002</PublicationDate>
+      <Publisher>Mariner</Publisher>
+      <Pages>224</Pages>
+      <ISBN10>9780156027601</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Starship Troopers</Name>
+      <Author>Robert A. Heinlein</Author>
+      <Description>Johnnie Rico never really intended to join up�and definitely not the infantry. But now that he�s in the thick of it, trying to get through combat training harder than anything he could have imagined, he knows everyone in his unit is one bad move away from buying the farm in the interstellar war the Terran Federation is waging against the Arachnids.</Description>
+      <PublicationDate>15-05-1987</PublicationDate>
+      <Publisher>Ace</Publisher>
+      <Pages>263</Pages>
+      <ISBN10>0441783589</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>Stories of Your Life and Others</Name>
+      <Author>Ted Chiang</Author>
+      <Description>Stories of Your Life and Others delivers dual delights of the very, very strange and the heartbreakingly familiar, often presenting characters who must confront sudden change the inevitable rise of automatons or the appearance of aliens with some sense of normalcy. With sharp intelligence and humor, Chiang examines what it means to be alive in a world marked by uncertainty, but also by beauty and wonder. An award-winning collection from one of today's most lauded writers, Stories of Your Life and Others is a contemporary classic.</Description>
+      <PublicationDate>14-05-2016</PublicationDate>
+      <Publisher>Vintage</Publisher>
+      <Pages>304</Pages>
+      <ISBN10>1101972122</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+
+    <!--60 Books-->
+
+    <Book>
+      <Name>Stranger in a Strange Land</Name>
+      <Author>Robert A. Heinlein</Author>
+      <Description>Raised by Martians on Mars, Valentine Michael Smith is a human who has never seen another member of his species. Sent to Earth, he is a stranger who must learn what it is to be a man. But his own beliefs and his powers far exceed the limits of humankind, and as he teaches them about grokking and water-sharing, he also inspires a transformation that will alter Earth's inhabitants forever...</Description>
+      <PublicationDate>01-10-1991</PublicationDate>
+      <Publisher>Ace</Publisher>
+      <Pages>528</Pages>
+      <ISBN10>0441788386</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>The Color of Magic (Discworld)</Name>
+      <Author>Terry Pratchett</Author>
+      <Description>A writer who has been compared to Mark Twain, Kurt Vonnegut, and Douglas Adams, Sir Terry Pratchett has created a complex, yet zany world filled with a host of unforgettable characters who navigate around a profound fantasy universe, complete with its own set of cultures and rules.</Description>
+      <PublicationDate>29-01-2013</PublicationDate>
+      <Publisher>Harper</Publisher>
+      <Pages>277</Pages>
+      <ISBN10>0062225677</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>The Curse of Chalion (Chalion series)</Name>
+      <Author>Lois McMaster Bujold</Author>
+      <Description>A man broken in body and spirit, Cazaril returns to the noble household he once served as page and is named secretary-tutor to the beautiful, strong-willed sister of the impetuous boy who is next in line to rule. It is an assignment Cazaril dreads, for it must ultimately lead him to the place he most fears: the royal court of Cardegoss, where the powerful enemies who once placed him in chains now occupy lofty positions.</Description>
+      <PublicationDate>11-04-2006</PublicationDate>
+      <Publisher>Harper Voyager</Publisher>
+      <Pages>448</Pages>
+      <ISBN10>0061134244</ISBN10>
+      <InStock>1</InStock>
+    </Book>
+    <Book>
+      <Name>The Dark is Rising (The Dark is Rising Sequence)</Name>
+      <Author>Susan Cooper</Author>
+      <Description>On the Midwinter Day that is his eleventh birthday, Will Stanton discovers a special gift -- that he is the last of the Old Ones, immortals dedicated to keeping the world from domination by the forces of evil, the Dark. At once, he is plunged into a quest for the six magical Signs that will one day aid the Old Ones in the final battle between the Dark and the Light. And for the twelve days of Christmas, while the Dark is rising, life for Will is full of wonder, terror, and delight.</Description>
+      <PublicationDate>01-10-1999</PublicationDate>
+      <Publisher>Margaret K. McElderry Books</Publisher>
+      <Pages>320</Pages>
+      <ISBN10>0689829833</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>The Dispossessed (Hainish Cycle)</Name>
+      <Author>Le Guin, Ursula K.</Author>
+      <Description>A bleak moon settled by utopian anarchists, Anarres has long been isolated from other worlds, including its mother planet, Urras�a civilization of warring nations, great poverty, and immense wealth. Now Shevek, a brilliant physicist, is determined to reunite the two planets, which have been divided by centuries of distrust. He will seek answers, question the unquestionable, and attempt to tear down the walls of hatred that have kept them apart.</Description>
+      <PublicationDate>20-10-1994</PublicationDate>
+      <Publisher>Harper Voyager</Publisher>
+      <Pages>400</Pages>
+      <ISBN10>0061054887</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>The Dragonbone Chair: Book One of Memory, Sorrow, and Thorn</Name>
+      <Author>Tad Williams</Author>
+      <Description>A war fueled by the powers of dark sorcery is about to engulf the peaceful land of Osten Ard�for Prester John, the High King, lies dying. And with his death, the Storm King, the undead ruler of the elf-like Sithi, seizes the chance to regain his lost realm through a pact with the newly ascended king. Knowing the consequences of this bargain, the king's younger brother joins with a small, scattered group of scholars, the League of the Scroll, to confront the true danger threatening Osten Ard.</Description>
+      <PublicationDate>07-11-1989</PublicationDate>
+      <Publisher>DAW</Publisher>
+      <Pages>800</Pages>
+      <ISBN10>0886773849</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>The Eye of the World (The Wheel of Time, Book 1)</Name>
+      <Author>Robert Jordan</Author>
+      <Description>The Wheel of Time turns and Ages come and go, leaving memories that become legend. Legend fades to myth, and even myth is long forgotten when the Age that gave it birth returns again. In the Third Age, an Age of Prophecy, the World and Time themselves hang in the balance. What was, what will be, and what is, may yet fall under the Shadow.</Description>
+      <PublicationDate>15-11-1990</PublicationDate>
+      <Publisher>Tor Fantasy</Publisher>
+      <Pages>832</Pages>
+      <ISBN10>0812511816</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>The Forever War</Name>
+      <Author>Joe Haldeman</Author>
+      <Description>The Earth's leaders have drawn a line in the interstellar sand--despite the fact that the fierce alien enemy they would oppose is inscrutable, unconquerable, and very far away. A reluctant conscript drafted into an elite Military unit, Private William Mandella has been propelled through space and time to fight in the distant thousand-year conflict; to perform his duties and do whatever it takes to survive the ordeal and return home. But "home" may be even more terrifying than battle, because, thanks to the time dilation caused by space travel, Mandella is aging months while the Earth he left behind is aging centuries...</Description>
+      <PublicationDate>17-02-2009</PublicationDate>
+      <Publisher>St. Martin's Griffin</Publisher>
+      <Pages>264</Pages>
+      <ISBN10>0312536631</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>His Dark Materials: The Golden Compass (Book 1)</Name>
+      <Author>Philip Pullman</Author>
+      <Description>Lyra is rushing to the cold, far North, where witch clans and armored bears rule. North, where the Gobblers take the children they steal--including her friend Roger. North, where her fearsome uncle Asriel is trying to build a bridge to a parallel world.</Description>
+      <PublicationDate>22-05-2001</PublicationDate>
+      <Publisher>Yearling</Publisher>
+      <Pages>448</Pages>
+      <ISBN10>0440418321</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>The Golem and the Jinni: A Novel (P.S.)</Name>
+      <Author>Helene Wecker</Author>
+      <Description>Chava is a golem, a creature made of clay, brought to life to by a disgraced rabbi who dabbles in dark Kabbalistic magic and dies at sea on the voyage from Poland. Chava is unmoored and adrift as the ship arrives in New York harbor in 1899.</Description>
+      <PublicationDate>31-12-2013</PublicationDate>
+      <Publisher>Harper Perennial</Publisher>
+      <Pages>512</Pages>
+      <ISBN10>0062110845</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+
+    <!--70 Books-->
+
+    <Book>
+      <Name>The Gunslinger: (The Dark Tower #1) (Revised Edition)</Name>
+      <Author>Stephen King</Author>
+      <Description>This heroic fantasy is set in a world of ominous landscape and macabre menace that is a dark mirror of our own. A spellbinding tale of good versus evil, it features one of Stephen King's most powerful creations The Gunslinger, a haunting figure who embodies the qualities of the lone hero through the ages, from ancient myth to frontier western legend.</Description>
+      <PublicationDate>01-07-2003</PublicationDate>
+      <Publisher>Signet</Publisher>
+      <Pages>336</Pages>
+      <ISBN10>0451210840</ISBN10>
+      <InStock>1</InStock>
+    </Book>
+    <Book>
+      <Name>The Handmaid's Tale</Name>
+      <Author>Margaret Atwood</Author>
+      <Description>In Margaret Atwood's dystopian future, environmental disasters and declining birthrates have led to a Second American Civil War. The result is the rise of the Republic of Gilead, a totalitarian regime that enforces rigid social roles and enslaves the few remaining fertile women. Offred is one of these, a Handmaid bound to produce children for one of Gilead�s commanders. Deprived of her husband, her child, her freedom, and even her own name, Offred clings to her memories and her will to survive. At once a scathing satire, an ominous warning, and a tour de force of narrative suspense, The Handmaid's Tale is a modern classic.</Description>
+      <PublicationDate>16-05-1998</PublicationDate>
+      <Publisher>Anchor</Publisher>
+      <Pages>311</Pages>
+      <ISBN10>038549081X</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>The Hitchhiker's Guide to the Galaxy</Name>
+      <Author>Douglas Adams</Author>
+      <Description>Seconds before Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet by his friend Ford Prefect, a researcher for the revised edition of The Hitchhiker's Guide to the Galaxy who, for the last fifteen years, has been posing as an out-of-work actor.</Description>
+      <PublicationDate>27-09-1995</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>224</Pages>
+      <ISBN10>0345391802</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>The Hobbit</Name>
+      <Author>J. R. R. Tolkien</Author>
+      <Description>Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.</Description>
+      <PublicationDate>18-09-2012</PublicationDate>
+      <Publisher>Houghton Mifflin Harcourt</Publisher>
+      <Pages>300</Pages>
+      <ISBN10>054792822X</ISBN10>
+      <InStock>7</InStock>
+    </Book>
+    <Book>
+      <Name>The Hunger Games (Book 1)</Name>
+      <Author>Suzanne Collins</Author>
+      <Description>In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. Long ago the districts waged war on the Capitol and were defeated. As part of the surrender terms, each district agreed to send one boy and one girl to appear in an annual televised event called, "The Hunger Games," a fight to the death on live TV. Sixteen-year-old Katniss Everdeen, who lives alone with her mother and younger sister, regards it as a death sentence when she is forced to represent her district in the Games. The terrain, rules, and level of audience participation may change but one thing is constant: kill or be killed.</Description>
+      <PublicationDate>03-07-2010</PublicationDate>
+      <Publisher>Scholastic Press</Publisher>
+      <Pages>384</Pages>
+      <ISBN10>9780439023528</ISBN10>
+      <InStock>6</InStock>
+    </Book>
+    <Book>
+      <Name>The Last Unicorn</Name>
+      <Author>Peter S. Beagle</Author>
+      <Description>The unicorn lived in a lilac wood, and she lived all alone. So she ventured out from the safety of the enchanted forest on a quest for others of her kind. Joined along the way by the bumbling magician Schmendrick and the indomitable Molly Grue, the unicorn learns all about the joys and sorrows of life and love before meeting her destiny in the castle of a despondent monarch and confronting the creature that would drive her kind to extinction...</Description>
+      <PublicationDate>01-01-1991</PublicationDate>
+      <Publisher>Ace</Publisher>
+      <Pages>304</Pages>
+      <ISBN10>9780451450524</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>The Left Hand of Darkness: 50th Anniversary Edition (Ace Science Fiction)</Name>
+      <Author>Le Guin, Ursula K.</Author>
+      <Description>A lone human ambassador is sent to the icebound planet of Winter, a world without sexual prejudice, where the inhabitants gender is fluid. His goal is to facilitate Winter's inclusion in a growing intergalactic civilization. But to do so he must bridge the gulf between his own views and those of the strange, intriguing culture he encounters...</Description>
+      <PublicationDate>01-07-2000</PublicationDate>
+      <Publisher>Ace</Publisher>
+      <Pages>336</Pages>
+      <ISBN10>0441007317</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>The Lion, the Witch and the Wardrobe (The Chronicles of Narnia)</Name>
+      <Author>C. S. Lewis</Author>
+      <Description>Four adventurous siblings Peter, Susan, Edmund, and Lucy Pevensie step through a wardrobe door and into the land of Narnia, a land frozen in eternal winter and enslaved by the power of the White Witch. But when almost all hope is lost, the return of the Great Lion, Aslan, signals a great change... and a great sacrifice.</Description>
+      <PublicationDate>02-02-2008</PublicationDate>
+      <Publisher>HarperCollins</Publisher>
+      <Pages>208</Pages>
+      <ISBN10>9780064404990</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>The Lord of the Rings: 50th Anniversary, One Vol. Edition</Name>
+      <Author>J. R. R. Tolkien</Author>
+      <Description>One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins.</Description>
+      <PublicationDate>12-10-2005</PublicationDate>
+      <Publisher>Mariner Books</Publisher>
+      <Pages>1178</Pages>
+      <ISBN10>0618640150</ISBN10>
+      <InStock>8</InStock>
+    </Book>
+    <Book>
+      <Name>The Magicians: A Novel (Magicians Trilogy)</Name>
+      <Author>Lev Grossman</Author>
+      <Description>Quentin Coldwater is brilliant but miserable. A high school math genius, he's secretly fascinated with a series of children�s fantasy novels set in a magical land called Fillory, and real life is disappointing by comparison. When Quentin is unexpectedly admitted to an elite, secret college of magic, it looks like his wildest dreams have come true. But his newfound powers lead him down a rabbit hole of hedonism and disillusionment, and ultimately to the dark secret behind the story of Fillory. The land of his childhood fantasies turns out to be much darker and more dangerous than he ever could have imagined....</Description>
+      <PublicationDate>25-05-2010</PublicationDate>
+      <Publisher>Penguin Books</Publisher>
+      <Pages>432</Pages>
+      <ISBN10>0452296293</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+
+    <!--80 Books-->
+
+    <Book>
+      <Name>The Martian</Name>
+      <Author>Andy Weir</Author>
+      <Description>Six days ago, astronaut Mark Watney became one of the first people to walk on Mars. Now, he's sure he'll be the first person to die there. After a dust storm nearly kills him and forces his crew to evacuate while thinking him dead, Mark finds himself stranded and completely alone with no way to even signal Earth that he�s alive�and even if he could get word out, his supplies would be gone long before a rescue could arrive.</Description>
+      <PublicationDate>28-10-2014</PublicationDate>
+      <Publisher>Broadway Books</Publisher>
+      <Pages>387</Pages>
+      <ISBN10>0553418025</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>The Martian Chronicles</Name>
+      <Author>Ray Bradbury</Author>
+      <Description>In The Martian Chronicles, Ray Bradbury, America's preeminent storyteller, imagines a place of hope, dreams, and metaphor of crystal pillars and fossil seas where a fine dust settles on the great empty cities of a vanished, devastated civilization. Earthmen conquer Mars and then are conquered by it, lulled by dangerous lies of comfort and familiarity, and enchanted by the lingering glamour of an ancient, mysterious native race. In this classic work of fiction, Bradbury exposes our ambitions, weaknesses, and ignorance in a strange and breathtaking world where man does not belong.</Description>
+      <PublicationDate>17-04-2012</PublicationDate>
+      <Publisher>Simon and Schuster</Publisher>
+      <Pages>256</Pages>
+      <ISBN10>9781451678192</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>The Mists of Avalon</Name>
+      <Author>Marion Zimmer Bradley</Author>
+      <Description>In Marion Zimmer Bradley's masterpiece, we see the tumult and adventures of Camelot's court through the eyes of the women who bolstered the king's rise and schemed for his fall. From their childhoods through the ultimate fulfillment of their destinies, we follow these women and the diverse cast of characters that surrounds them as the great Arthurian epic unfolds stunningly before us. As Morgaine and Gwenhwyfar struggle for control over the fate of Arthur's kingdom, as the Knights of the Round Table take on their infamous quest, as Merlin and Viviane wield their magics for the future of Old Britain, the Isle of Avalon slips further into the impenetrable mists of memory, until the fissure between old and new worlds' and old and new religions' claims its most famous victim.</Description>
+      <PublicationDate>01-05-1984</PublicationDate>
+      <Publisher>Ballantine Books</Publisher>
+      <Pages>876</Pages>
+      <ISBN10>9780345350497</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>The Name of the Wind</Name>
+      <Author>Patrick Rothfuss</Author>
+      <Description>My name is Kvothe. I have stolen princesses back from sleeping barrow kings. I burned down the town of Trebon. I have spent the night with Felurian and left with both my sanity and my life. I was expelled from the University at a younger age than most people are allowed in. I tread paths by moonlight that others fear to speak of during day. I have talked to Gods, loved women, and written songs that make the minstrels weep. You may have heard of me. So begins a tale unequaled in fantasy literature the story of a hero told in his own voice. It is a tale of sorrow, a tale of survival, a tale of one man's search for meaning in his universe, and how that search, and the indomitable will that drove it, gave birth to a legend.</Description>
+      <PublicationDate>01-04-2008</PublicationDate>
+      <Publisher>DAW</Publisher>
+      <Pages>722</Pages>
+      <ISBN10>0756404746</ISBN10>
+      <InStock>1</InStock>
+    </Book>
+    <Book>
+      <Name>The Princess Bride: S. Morgenstern's Classic Tale of True Love and High Adventure</Name>
+      <Author>William Goldman</Author>
+      <Description>Anyone who lived through the 1980s may find it impossible inconceivable, even to equate The Princess Bride with anything other than the sweet, celluloid romance of Westley and Buttercup, but the film is only a fraction of the ingenious storytelling you'll find in these pages. Rich in character and satire, the novel is set in 1941 and framed cleverly as an "abridged" retelling of a centuries-old tale set in the fabled country of Florin that's home to "Beasts of all natures and descriptions. Pain. Death. Brave men. Coward men. Strongest men. Chases. Escapes. Lies. Truths. Passions."</Description>
+      <PublicationDate>08-10-2007</PublicationDate>
+      <Publisher>Harcourt</Publisher>
+      <Pages>512</Pages>
+      <ISBN10>9780156035217</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>The Road</Name>
+      <Author>Cormac McCarthy</Author>
+      <Description>A father and his son walk alone through burned America. Nothing moves in the ravaged landscape save the ash on the wind. It is cold enough to crack stones, and when the snow falls it is gray. The sky is dark. Their destination is the coast, although they don't know what, if anything, awaits them there. They have nothing; just a pistol to defend themselves against the lawless bands that stalk the road, the clothes they are wearing, a cart of scavenged food�and each other.</Description>
+      <PublicationDate>28-05-2006</PublicationDate>
+      <Publisher>Vintage</Publisher>
+      <Pages>287</Pages>
+      <ISBN10>9780307387899</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>The Rook</Name>
+      <Author>Daniel O'Malley</Author>
+      <Description>Myfanwy Thomas awakens in a London park surrounded by dead bodies. With her memory gone, she must trust the instructions left by her former in order to survive. She quickly learns that she is a Rook, a high-level operative in a secret agency that protects the world from supernatural threats. But there is a mole inside the organization, and this person wants her dead.</Description>
+      <PublicationDate>01-01-2012</PublicationDate>
+      <Publisher>Back Bay Books</Publisher>
+      <Pages>512</Pages>
+      <ISBN10>0316098809</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>The Sparrow: A Novel (The Sparrow Series)</Name>
+      <Author>Mary Doria Russell</Author>
+      <Description>The Sparrow tells the story of a charismatic Jesuit priest and linguist, Emilio Sandoz, who leads a scientific mission entrusted with a profound task: to make first contact with intelligent extraterrestrial life. The mission begins in faith, hope, and beauty, but a series of small misunderstandings brings it to a catastrophic end.</Description>
+      <PublicationDate>08-09-1997</PublicationDate>
+      <Publisher>Ballantine Books</Publisher>
+      <Pages>408</Pages>
+      <ISBN10>0449912558</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>The Speed of Dark (Ballantine Reader's Circle)</Name>
+      <Author>Elizabeth Moon</Author>
+      <Description>In the near future, disease will be a condition of the past. Most genetic defects will be removed at birth; the remaining during infancy. Lou Arrendale, a high-functioning autistic adult, is a member of the lost generation, born at the wrong time to reap the rewards of medical science. He lives a low-key, independent life. But then he is offered a chance to try a brand-new experimental "cure" for his condition. With this treatment Lou would think and act and be just like everyone else. But if he was suddenly free of autism, would he still be himself? Would he still love the same classical music�with its complications and resolutions? Would he still see the same colors and patterns in the world�shades and hues that others cannot see? Most important, would he still love Marjory, a woman who may never be able to reciprocate his feelings? Now Lou must decide if he should submit to a surgery that might completely change the way he views the world... and the very essence of who he is.</Description>
+      <PublicationDate>02-03-2004</PublicationDate>
+      <Publisher>Ballantine Books</Publisher>
+      <Pages>384</Pages>
+      <ISBN10>0345447549</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>The Stars My Destination</Name>
+      <Author>Alfred Bester</Author>
+      <Description>#5 in the Millennium SF Masterworks series, a library of the finest science fiction ever written. "Science fiction has only produced a few works of actual genius, and this is one of them"-Joe Haldeman "Bester at the peak of his powers is, quite simply, unbeatable" -James Lovegrove Marooned in outer space after an attack on his ship, Nomad, Gulliver Foyle lives to obsessively pursue the crew of a rescue vessel that had intended to leave him to die. When it comes to pop culture, Alfred Bester (1913-1987) is something of an unsung hero. He wrote radio scripts, screenplays, and comic books (in which capacity he created the original Green Lantern Oath). But Bester is best known for his science-fiction novels, and The Stars My Destination may be his finest creation. With its sly potshotting at corporate skullduggery, The Stars My Destination seems utterly contemporary, and has maintained its status as an underground classic for fifty years. (Bester fans should also note that iPicturebooks has reprinted The Demolished Man, which won the very first Hugo Award in 1953.) Alfred Bester was among the first important authors of contemporary science fiction. His passionate novels of worldly adventure, high intellect, and tremendous verve, The Stars My Destination and the Hugo Award winning The Demolished Man, established Bester as a s.f. grandmaster, a reputation that was ratified by the Science Fiction Writers of America shortly before his death. Bester also was an acclaimed journalist for Holiday magazine, a reviewer for the Magazine of Fantasy and Science Fiction and even a writer for Superman.</Description>
+      <PublicationDate>30-06-2011</PublicationDate>
+      <Publisher>iPicturebooks</Publisher>
+      <Pages>236</Pages>
+      <ISBN10>1876963468</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+
+    <!--90 Books-->
+
+    <Book>
+      <Name>The Sword of Shannara</Name>
+      <Author>Terry Brooks</Author>
+      <Description>Long ago, the wars of the ancient Evil ruined the world. In peaceful Shady Vale, half-elfin Shea Ohmsford knows little of such troubles. But the supposedly dead Warlock Lord is plotting to destroy everything in his wake.The sole weapon against this Power of Darkness is the Sword of Shannara, which can be used only by a trueheir of Shannara. On Shea, last of the bloodline,rests the hope of all the races.</Description>
+      <PublicationDate>12-07-1983</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>736</Pages>
+      <ISBN10>0345314255</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>The Time Machine</Name>
+      <Author>H. G. Wells</Author>
+      <Description>First novel by H.G. Wells, published in book form in 1895. The novel is considered one of the earliest works of science fiction and the progenitor of the "time travel" subgenre. Wells advanced his social and political ideas in this narrative of a nameless Time Traveller who is hurtled into the year 802,701 by his elaborate ivory, crystal, and brass contraption. The world he finds is peopled by two races: the decadent Eloi, fluttery and useless, are dependent for food, clothing, and shelter on the simian subterranean Morlocks, who prey on them. The two races--whose names are borrowed from the Biblical Eli and Moloch--symbolize Wells's vision of the eventual result of unchecked capitalism: a neurasthenic upper class that would eventually be devoured by a proletariat driven to the depths.</Description>
+      <PublicationDate>14-08-2010</PublicationDate>
+      <Publisher>CreateSpace Independent Publishing Platform</Publisher>
+      <Pages>104</Pages>
+      <ISBN10>1453767525</ISBN10>
+      <InStock>4</InStock>
+    </Book>
+    <Book>
+      <Name>The Time Traveler's Wife</Name>
+      <Author>Audrey Niffenegger</Author>
+      <Description>This is the story of Henry and Clare, who have known eachother since Clare was 6 and Henry was 36 and were married when Clare was 20 and Henry 28. This is possible only because Henry is one of the first people diagnosed with Chrono-Displacement Disorder: periodically his genetic clock resets and he flashes to other points in time.</Description>
+      <PublicationDate>31-12-2003</PublicationDate>
+      <Publisher>Gardners Books</Publisher>
+      <Pages>528</Pages>
+      <ISBN10>0224073087</ISBN10>
+      <InStock>1</InStock>
+    </Book>
+    <Book>
+      <Name>The Way of Kings</Name>
+      <Author>Brandon Sanderson</Author>
+      <Description>Roshar is a world of stone and storms. Uncanny tempests of incredible power sweep across the rocky terrain so frequently that they have shaped ecology and civilization alike. Animals hide in shells, trees pull in branches, and grass retracts into the soilless ground. Cities are built only where the topography offers shelter.</Description>
+      <PublicationDate>24-05-2011</PublicationDate>
+      <Publisher>Tor Fantasy</Publisher>
+      <Pages>1280</Pages>
+      <ISBN10>0765365278</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>The Windup Girl</Name>
+      <Author>Paolo Bacigalupi</Author>
+      <Description>Anderson Lake is AgriGen's Calorie Man, sent to work undercover as a factory manager in Thailand while combing Bangkok's street markets in search of foodstuffs thought to be extinct, hoping to reap the bounty of history's lost calories. Emiko is the Windup Girl, a strange and beautiful creature. Emiko is not human; she is an engineered being, grown and programmed to satisfy the decadent whims of a Kyoto businessman, but now abandoned to the streets of Bangkok. Regarded as soulless beings by some, devils by others, New People are slaves, soldiers, and toys of the rich in this chilling near future in which calorie companies rule the world, the oil age has passed, and the side effects of bio-engineered plagues run rampant across the globe.</Description>
+      <PublicationDate>05-05-2015</PublicationDate>
+      <Publisher>Night Shade</Publisher>
+      <Pages>480</Pages>
+      <ISBN10>1597808210</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Twenty Thousand Leagues Under the Sea</Name>
+      <Author>Jules Verne</Author>
+      <Description>Twenty Thousand Leagues Under the Sea is a classic science fiction novel by French writer Jules Verne published in 1870. It tells the story of Captain Nemo and his submarine Nautilus, as seen from the perspective of Professor Pierre Aronnax after he, his servant Conseil, and Canadian whaler Ned Land wash up on their ship. On the Nautilus, the three embark on a journey which has them going all around the world, under the sea.</Description>
+      <PublicationDate>01-03-2019</PublicationDate>
+      <Publisher>CreateSpace Independent Publishing Platform</Publisher>
+      <Pages>212</Pages>
+      <ISBN10>1512093599</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+    <Book>
+      <Name>Uglies</Name>
+      <Author>Scott Westerfeld</Author>
+      <Description>Tally's adventures begin in Uglies, where she learns the truth about what life as a Pretty really means.</Description>
+      <PublicationDate>03-05-2011</PublicationDate>
+      <Publisher>Simon Pulse</Publisher>
+      <Pages>432</Pages>
+      <ISBN10>1442419814</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>Uprooted</Name>
+      <Author>Naomi Novik</Author>
+      <Description>Agnieszka loves her valley home, her quiet village, the forests and the bright shining river. But the corrupted Wood stands on the border, full of malevolent power, and its shadow lies over her life. Her people rely on the cold, driven wizard known only as the Dragon to keep its powers at bay. But he demands a terrible price for his help: one young woman handed over to serve him for ten years, a fate almost as terrible as falling to the Wood.</Description>
+      <PublicationDate>19-05-2015</PublicationDate>
+      <Publisher>Del Rey</Publisher>
+      <Pages>448</Pages>
+      <ISBN10>0804179034</ISBN10>
+      <InStock>3</InStock>
+    </Book>
+    <Book>
+      <Name>Wool</Name>
+      <Author>Hugh Howey</Author>
+      <Description>In a ruined and toxic future, a community exists in a giant silo underground, hundreds of stories deep. There, men and women live in a society full of regulations they believe are meant to protect them. Sheriff Holston, who has unwaveringly upheld the silo's rules for years, unexpectedly breaks the greatest taboo of all: He asks to go outside.</Description>
+      <PublicationDate>12-03-2013</PublicationDate>
+      <Publisher>Simon and Schuster</Publisher>
+      <Pages>528</Pages>
+      <ISBN10>1476733953</ISBN10>
+      <InStock>2</InStock>
+    </Book>
+    <Book>
+      <Name>World War Z: An Oral History of the Zombie War</Name>
+      <Author>Max Brooks</Author>
+      <Description>The Zombie War came unthinkably close to eradicating humanity. Max Brooks, driven by the urgency of preserving the acid-etched first-hand experiences of the survivors from those apocalyptic years, traveled across the United States of America and throughout the world, from decimated cities that once teemed with upwards of thirty million souls to the most remote and inhospitable areas of the planet. He recorded the testimony of men, women, and sometimes children who came face-to-face with the living, or at least the undead, hell of that dreadful time. World War Z is the result. Never before have we had access to a document that so powerfully conveys the depth of fear and horror, and also the ineradicable spirit of resistance, that gripped human society through the plague years.</Description>
+      <PublicationDate>16-10-2007</PublicationDate>
+      <Publisher>Three Rivers Press</Publisher>
+      <Pages>342</Pages>
+      <ISBN10>9780307346612</ISBN10>
+      <InStock>5</InStock>
+    </Book>
+
+    <!--100 Books-->
+  
+  </BookList>
+</Inventory>

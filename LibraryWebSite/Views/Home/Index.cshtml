@@ -1,0 +1,14 @@
+﻿@using LibraryDAL;
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    @foreach (var elem in DataFromDB.GetBooks())
+    {
+        <div class="col-md-2">
+            <h4>@elem.Name</h4>
+            <p>@elem.Author</p>
+        </div>
+    }
+</div>
