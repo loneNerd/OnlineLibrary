@@ -1,0 +1,49 @@
+﻿@using LibraryDAL.Models
+@model Book
+@{
+    ViewBag.Title = "Edit Book";
+}
+
+<section>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+            <h2>@Model.Name</h2>
+            <p>@Model.Author</p>
+        </div>
+            <hr />
+        <div class="form-group">
+            <label>Pages: @Model.Pages</label>
+        </div>
+        <div class="form-group">
+            <label>Publication Date: @Model.PublicationDate</label>
+        </div>
+        <div class="form-group">
+            <label>Publisher: @Model.Publisher</label>
+        </div>
+        <div class="form-group">
+            <label>ISBN 10: @Model.ISBN10</label>
+        </div>
+        </div>
+        <div class="col-md-7">
+            <h2>Description</h2>
+            <p>@Model.Description</p>
+        </div>
+    </div>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        if (Model.InStock == 0)
+        {
+            <p class="text-danger">Currently this book is unaviable</p>
+        }
+        else
+        {
+            @Html.ActionLink("Add to basket", "AddToBasket", "Home", new { id = Model.BookID, returnUrl = Request.Url.PathAndQuery }, new { @class = "btn btn-success" })
+        }
+    }
+    else
+    {
+        <p class="text-danger">You need have an account to order a book</p>
+    }
+</section>

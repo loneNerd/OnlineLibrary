@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(LibraryDAL.Startup))]
-namespace LibraryDAL
+[assembly: OwinStartupAttribute(typeof(LibraryWebSite.Startup))]
+namespace LibraryWebSite
 {
     public partial class Startup
     {

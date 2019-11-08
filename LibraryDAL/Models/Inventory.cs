@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Xml.Serialization;
-using System.ComponentModel.DataAnnotations;
 
 namespace LibraryDAL.Models
 {
+    /// <summary>
+    /// This class need to add books from xml file.
+    /// </summary>
     [XmlRoot]
     public class Inventory
     {

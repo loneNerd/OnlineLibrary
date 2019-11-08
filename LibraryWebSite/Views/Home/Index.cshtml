@@ -1,14 +1,50 @@
-﻿@using LibraryDAL;
+﻿@using LibraryWebSite.Models
+@using LibraryWebSite.HtmlHelpers
+
+@model BooksPageViewModels
+
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Catalog";
 }
 
-<div class="row">
-    @foreach (var elem in DataFromDB.GetBooks())
-    {
-        <div class="col-md-2">
-            <h4>@elem.Name</h4>
-            <p>@elem.Author</p>
+<section>
+    <div class="row container">
+        <div class="col-md-8 p-0">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    @Html.ActionLink("Name", "ChangeSort", "Home", new { sort = "name", returnUrl = Request.Url.PathAndQuery }, new { @class = "dropdown-item" })
+                    @Html.ActionLink("Author", "ChangeSort", "Home", new { sort = "author", returnUrl = Request.Url.PathAndQuery }, new { @class = "dropdown-item" })
+                    @Html.ActionLink("Publisher", "ChangeSort", "Home", new { sort = "publisher", returnUrl = Request.Url.PathAndQuery }, new { @class = "dropdown-item" })
+                    @Html.ActionLink("Date", "ChangeSort", "Home", new { sort = "publicationDate", returnUrl = Request.Url.PathAndQuery }, new { @class = "dropdown-item" })
+                </div>
+            </div>
         </div>
-    }
-</div>
+        <div>
+            @using (Html.BeginForm("SearchResult", "Home", FormMethod.Get, new { @class = "form-inline my-2 my-lg-0" }))
+            {
+                <input name="request" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            }
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+        @foreach (var elem in Model.Books)
+        {
+            <div class="col-md-4">
+                <h5>@elem.TrimName()</h5>
+                <p>@elem.Author</p>
+                <p>@elem.TrimDescription() @Html.ActionLink("More >>", "BookInfo", new { id = elem.BookID })</p>
+            </div>
+        }
+    </div>
+
+    <div>
+        @Html.PageLinks(Model.PageInfo, x => Url.Action("Index", new { page = x }))
+    </div>
+</section>

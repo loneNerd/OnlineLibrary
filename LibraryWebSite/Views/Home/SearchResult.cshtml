@@ -1,0 +1,33 @@
+﻿@using LibraryDAL.Models
+@using LibraryWebSite.Models
+@using LibraryWebSite.HtmlHelpers
+
+@model BooksPageViewModels
+
+@{
+    ViewBag.Title = "Basket";
+}
+
+<section>
+    @Html.ActionLink("Back to catalog", "Index", new { page = 1 }, new { @class = "btn btn-secondary" })
+
+    @if (Model.Books == null || Model.Books.Count() == 0)
+    {
+        <h1 class="text-lg-center">No Result</h1>
+    }
+    else
+    {
+        foreach (var book in Model.Books)
+        {
+            <hr />
+            <div class="form-group">
+                <h5>@book.Name</h5>
+                <p>@book.Author</p>
+                @Html.ActionLink("More >>", "BookInfo", "Home", new { id = book.BookID }, new { @class = "btn btn-success" })
+            </div>
+        }
+        <div>
+            @Html.PageLinks(Model.PageInfo, x => Url.Action("SearchResult", new { request = ViewBag.Request, page = x }))
+        </div>
+    }
+</section>

@@ -1,0 +1,32 @@
+﻿@using LibraryDAL.Models
+@{
+    ViewBag.Title = "Basket";
+    List<Book> books = ViewBag.Books;
+}
+
+<section>
+    <div>
+        @if (books == null || books.Count == 0)
+        {
+            <h1 class="text-lg-center">No Books Yet</h1>
+        }
+        else
+        {
+            <table class="table table-striped table-bordered">
+                <tbody>
+                    @for (int i = 0; i < books.Count; ++i)
+                    {
+                        <tr>
+                            <td class="text-right">@(i + 1)</td>
+                            <td>@books[i].Name</td>
+                            <td>@books[i].Author</td>
+                            <td class="text-center">@Html.ActionLink("Remove", "RemoveFromBasket", "Home", new { id = books[i].BookID }, null)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @Html.ActionLink("Order", "MakeOrder", "Home", null, new { @class = "btn btn-primary" })
+        }
+        @Html.ActionLink("Back to catalog", "Index", new { page = 1 }, new { @class = "btn btn-secondary" })
+    </div>
+</section>

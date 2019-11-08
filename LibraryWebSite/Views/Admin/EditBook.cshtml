@@ -1,0 +1,77 @@
+﻿@using LibraryDAL.Models
+@model Book
+@{
+    ViewBag.Title = "Edit Book";
+    Layout = "~/Views/Admin/_AdminLayout.cshtml";
+}
+
+<section>
+    @using (Html.BeginForm("EditBook", "Admin", FormMethod.Post))
+    {
+        @Html.HiddenFor(m => m.BookID)
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Author, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Author, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Author, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Description, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(m => m.Description, new { @class = "form-control", rows = 10 })
+                @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ISBN10, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.ISBN10, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.ISBN10, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Pages, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Pages, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Pages, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.PublicationDate, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.PublicationDate, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.PublicationDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Publisher, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Publisher, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Publisher, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.InStock, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.InStock, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.InStock, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Save Changes</button>
+            @Html.ActionLink("Cancel and return", "Index", null, new { @class = "btn btn-secondary" })
+        </div>
+    }
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

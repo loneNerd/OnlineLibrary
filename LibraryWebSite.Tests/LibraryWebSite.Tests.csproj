@@ -83,6 +83,8 @@
     <Reference Include="System.Net.Http.WebRequest" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AdminControllerTest.cs" />
+    <Compile Include="Controllers\LibrarianControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
@@ -93,6 +95,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LibraryDAL\LibraryDAL.csproj">
+      <Project>{dd2284fd-e8be-44ec-a24f-4da75d11f298}</Project>
+      <Name>LibraryDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LibraryWebSite\LibraryWebSite.csproj">
       <Project>{328EC85A-47C8-4359-A36E-BDAA94B119A8}</Project>
       <Name>LibraryWebSite</Name>

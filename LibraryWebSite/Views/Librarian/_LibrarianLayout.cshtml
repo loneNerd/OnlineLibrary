@@ -6,20 +6,20 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
     <div class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
             <div class="navbar-header">
-                @Html.ActionLink("Online Library", "Index", "Home", new { pages = 1, order = ViewBag.Order ?? "name" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Librarian Panel", "Index", "Librarian", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse flex-row-reverse" id="navbar">
-                @Html.Partial("_LoginPartial")
-            </div>
+            <ul class="nav navbar-nav navbar-right">
+                @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <li><a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+                }
+            </ul>
         </div>
     </div>
     <div class="container body-content">
