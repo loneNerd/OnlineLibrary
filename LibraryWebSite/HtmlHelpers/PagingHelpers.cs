@@ -20,7 +20,7 @@ namespace LibraryWebSite.HtmlHelpers
             else if (pageInfo.CurrentPage == pageInfo.TotalPages) { start = -2; end = 0; }
             else  { start = -1; end = 1; }
 
-            for (int i = start; i < pageInfo.TotalPages - end && i <= end; ++i)
+            for (int i = start; i <= pageInfo.TotalPages - end && i <= end; ++i)
             {
                 TagBuilder li = new TagBuilder("li");
                 li.AddCssClass("page-item");
