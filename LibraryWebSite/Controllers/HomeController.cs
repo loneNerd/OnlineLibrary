@@ -50,9 +50,6 @@ namespace LibraryWebSite.Controllers
                         break;
                 }
 
-                if (books.Count / _catalogPageCapacity < page)
-                    return RedirectToAction("Index", "Home", new { page = 1 });
-
                 int start = (((int)page - 1) * _catalogPageCapacity);
                 int end = books.Count - start > _catalogPageCapacity ? _catalogPageCapacity : books.Count - start;
 

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Data.Entity;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using LibraryDAL.Models;
@@ -13,17 +12,7 @@ namespace LibraryDAL
     /// </summary>
     public class DBRepository
     {
-        private static readonly DatabaseContext _databaseContext = new DatabaseContext();
-
-        /// <summary>
-        /// This method initialize database.
-        /// </summary>
-        public static void InitializeDB()
-        {
-            Database.SetInitializer(new DatabaseInitializer());
-            _databaseContext.Database.Initialize(true);
-            _databaseContext.Database.CreateIfNotExists();
-        }
+        private static readonly ApplicationDbContext _databaseContext = new ApplicationDbContext();
 
         #region Methods for book
 

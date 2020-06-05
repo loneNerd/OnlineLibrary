@@ -12,7 +12,7 @@ namespace LibraryDAL
     /// <summary>
     /// This class initialize database when application start.
     /// </summary>
-    class DatabaseInitializer : DropCreateDatabaseIfModelChanges<DatabaseContext>
+    public class DatabaseInitializer : DropCreateDatabaseIfModelChanges<ApplicationDbContext>
     {
         //Name of file which contains info about book
         private const string _booksFileName = "Books.xml";
@@ -21,7 +21,7 @@ namespace LibraryDAL
         /// This method add data to database
         /// </summary>
         /// <param name="context">Context for this database</param>
-        protected override void Seed(DatabaseContext context)
+        protected override void Seed(ApplicationDbContext context)
         {
             Inventory newInventory;
 
