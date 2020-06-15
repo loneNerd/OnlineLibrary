@@ -17,6 +17,8 @@ namespace LibraryWebSite.Controllers
         private static string _sort = "name";
         private Logger _logger = LogManager.GetCurrentClassLogger();
 
+        private readonly DBRepository _dbRepo = new DBRepository();
+
         //GET : Home/Index
         public ActionResult Index(int? page = 1)
         {
@@ -26,7 +28,7 @@ namespace LibraryWebSite.Controllers
                     return RedirectToAction("Index", "Admin");
                 else if (User.IsInRole("Librarian"))
                     return RedirectToAction("Index", "Librarian");
-
+                
                 if (page == null)
                     page = 1;
 
@@ -35,18 +37,18 @@ namespace LibraryWebSite.Controllers
                 switch (_sort)
                 {
                     case "author":
-                        books = DBRepository.GetBooks().OrderBy(book => book.Author).ToList();
+                        books = _dbRepo.GetBooks().OrderBy(book => book.Author).ToList();
                         break;
                     case "publisher":
-                        books = DBRepository.GetBooks().OrderBy(book => book.Publisher).ToList();
+                        books = _dbRepo.GetBooks().OrderBy(book => book.Publisher).ToList();
                         break;
                     case "publicationDate":
-                        books = DBRepository.GetBooks().OrderBy(book => book.PublicationDate).ToList();
+                        books = _dbRepo.GetBooks().OrderBy(book => book.PublicationDate).ToList();
                         books.Sort((book1, book2) => DateTime.Parse(book1.PublicationDate).CompareTo(DateTime.Parse(book2.PublicationDate)));
                         break;
                     case "name":
                     default:
-                        books = DBRepository.GetBooks().OrderBy(book => book.Name).ToList();
+                        books = _dbRepo.GetBooks().OrderBy(book => book.Name).ToList();
                         break;
                 }
 
@@ -103,8 +105,8 @@ namespace LibraryWebSite.Controllers
         {
             try
             {
-                ViewBag.PreOrders = DBRepository.GetActivePreOrders().Where(elem => elem.Reader.Id == User.Identity.GetUserId<int>()).ToList();
-                ViewBag.Orders = DBRepository.GetActiveOrders().Where(elem => elem.Reader.Id == User.Identity.GetUserId<int>()).ToList();
+                ViewBag.PreOrders = _dbRepo.GetActivePreOrders().Where(elem => elem.Reader.Id == User.Identity.GetUserId<int>()).ToList();
+                ViewBag.Orders = _dbRepo.GetActiveOrders().Where(elem => elem.Reader.Id == User.Identity.GetUserId<int>()).ToList();
             }
             catch (Exception ex)
             {
@@ -122,7 +124,7 @@ namespace LibraryWebSite.Controllers
                 if (id == null)
                     return RedirectToAction("Index", "Home", new { page = 1 });
 
-                var book = DBRepository.GetBookById((int)id);
+                var book = _dbRepo.GetBookById((int)id);
 
                 if (book == null)
                     return RedirectToAction("Index", "Home", new { page = 1 });
@@ -162,7 +164,7 @@ namespace LibraryWebSite.Controllers
                 if (id == null)
                     return RedirectToAction("Index", "Home", new { page = 1 });
 
-                Book book = DBRepository.GetBookById((int)id);
+                Book book = _dbRepo.GetBookById((int)id);
 
                 if (book == null)
                     return RedirectToAction("Index", "Home", new { page = 1 });
@@ -171,7 +173,7 @@ namespace LibraryWebSite.Controllers
                 {
                     Book = book,
                     Status = "Active",
-                    Reader = DBRepository.GetReaderById(User.Identity.GetUserId<int>())
+                    Reader = _dbRepo.GetReaderById(User.Identity.GetUserId<int>())
                 });
 
                 return RedirectToAction("Basket", "Home");
@@ -217,7 +219,7 @@ namespace LibraryWebSite.Controllers
                 if (GetPreOrder() == null || GetPreOrder().Count == 0)
                     return RedirectToAction("Index", "Home", new { page = 1 });
 
-                GetPreOrder().ForEach(elem => DBRepository.AddPreOrder(new PreOrder
+                GetPreOrder().ForEach(elem => _dbRepo.AddPreOrder(new PreOrder
                 {
                     Book = elem.Book,
                     Reader = elem.Reader,
@@ -244,7 +246,7 @@ namespace LibraryWebSite.Controllers
 
                 ViewBag.Request = request;
 
-                List<Book> books = DBRepository.GetBooks()
+                List<Book> books = _dbRepo.GetBooks()
                     .Where(elem => elem.Name.ToLower().Contains(request.ToLower()) || elem.Author.ToLower().Contains(request.ToLower())).ToList();
 
                 if (books.Count / _searchPageCapacity < page)
