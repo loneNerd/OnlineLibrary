@@ -17,15 +17,17 @@ namespace LibraryWebSite.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        private IDBRepository _dbRepository;
 
         public AccountController()
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager, IDBRepository dbRepository)
         {
             UserManager = userManager;
             SignInManager = signInManager;
+            DBRepository = dbRepository;
         }
 
         public ApplicationSignInManager SignInManager
@@ -52,6 +54,22 @@ namespace LibraryWebSite.Controllers
             }
         }
 
+        public IDBRepository DBRepository
+        {
+            get
+            {
+                if (_dbRepository == null)
+                    _dbRepository = new DBRepository();
+
+                return _dbRepository;
+            }
+
+            set
+            {
+                _dbRepository = value;
+            }
+        }
+
         //
         // GET: /Account/Login
         [AllowAnonymous]
@@ -69,6 +87,7 @@ namespace LibraryWebSite.Controllers
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             DBUser user = DBRepository.GetUsers().FirstOrDefault(elem => elem.Email == model.Email);
+
             if (user != null && user.IsBlock)
                 ModelState.AddModelError("", "Invalid login attempt.");
             

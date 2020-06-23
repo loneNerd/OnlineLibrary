@@ -12,6 +12,64 @@ namespace LibraryWebSite.Controllers
     {
         private Logger _logger = LogManager.GetCurrentClassLogger();
 
+        private IBookRepository _bookRepository;
+        private IReaderRepository _readerRepository;
+        private ILibrarianRepository _librarianRepository;
+
+        public AdminController() { }
+
+        public AdminController(IBookRepository bookRepository, IReaderRepository readerRepository, ILibrarianRepository librarianRepository)
+        {
+            BookRepository = bookRepository;
+            ReaderRepository = readerRepository;
+            LibrarianRepository = librarianRepository;
+        }
+
+        public IBookRepository BookRepository
+        {
+            get
+            {
+                if (_bookRepository == null)
+                    _bookRepository = new BookRepository();
+
+                return _bookRepository;
+            }
+            private set
+            {
+                _bookRepository = value;
+            }
+        }
+
+        public IReaderRepository ReaderRepository
+        {
+            get
+            {
+                if (_readerRepository == null)
+                    _readerRepository = new ReaderRepository();
+
+                return _readerRepository;
+            }
+            private set
+            {
+                _readerRepository = value;
+            }
+        }
+
+        public ILibrarianRepository LibrarianRepository
+        {
+            get
+            {
+                if (_librarianRepository == null)
+                    _librarianRepository = new LibrarianRepository();
+
+                return _librarianRepository;
+            }
+            private set
+            {
+                _librarianRepository = value;
+            }
+        }
+
         //GET : /Admin/Index
         [Authorize(Roles = "Admin")]
         public ActionResult Index()
@@ -24,9 +82,9 @@ namespace LibraryWebSite.Controllers
                     return RedirectToAction("Index", "Home", new { page = 1 });
                 }
 
-                ViewBag.Books = DBRepository.GetBooks().ToList();
-                ViewBag.Users = DBRepository.GetReaders().ToList();
-                ViewBag.Librarians = DBRepository.GetLibrarians().ToList();
+                ViewBag.Books = BookRepository.GetBooks().ToList();
+                ViewBag.Users = ReaderRepository.GetReaders().ToList();
+                ViewBag.Librarians = LibrarianRepository.GetLibrarians().ToList();
             }
             catch (Exception ex)
             {
@@ -48,7 +106,7 @@ namespace LibraryWebSite.Controllers
                 if (id == 0)
                     return View(new Book());
 
-                var book = DBRepository.GetBookById((int)id);
+                var book = BookRepository.GetBookById((int)id);
 
                 if (book == null)
                 {
@@ -81,9 +139,9 @@ namespace LibraryWebSite.Controllers
                     bool result;
 
                     if (book.BookID == 0)
-                        result = DBRepository.AddNewBook(book);
+                        result = BookRepository.AddNewBook(book);
                     else
-                        result = DBRepository.EditBook(book);
+                        result = BookRepository.EditBook(book);
 
                     if (result)
                         TempData["message"] = "Changes saved";
@@ -111,7 +169,7 @@ namespace LibraryWebSite.Controllers
                 if (id == null)
                     return Redirect(Request.Url.PathAndQuery);
 
-                if (DBRepository.DeleteBook((int)id))
+                if (BookRepository.DeleteBook((int)id))
                     TempData["message"] = "Book deleted";
                 else
                     TempData["errorMessage"] = "Book wasn't deleted";
@@ -130,7 +188,7 @@ namespace LibraryWebSite.Controllers
         {
             try
             {
-                if (DBRepository.ChangeReaderStatus((int)id))
+                if (ReaderRepository.ChangeReaderStatus((int)id))
                     TempData["message"] = "Status has been changed";
                 else
                     TempData["errorMessage"] = "Status hasn't been changed";
@@ -164,7 +222,7 @@ namespace LibraryWebSite.Controllers
                         Email = librarian.Email
                     };
 
-                    if (DBRepository.AddNewLibrarian(user, librarian.Password))
+                    if (LibrarianRepository.AddNewLibrarian(user, librarian.Password))
                         TempData["message"] = "New librarian added";
                     else
                         TempData["errorMessage"] = "New librarian wasn't added";
@@ -186,7 +244,7 @@ namespace LibraryWebSite.Controllers
         {
             try
             {
-                if (DBRepository.DeleteLibrarian((int)id))
+                if (LibrarianRepository.DeleteLibrarian((int)id))
                     TempData["message"] = "Librarian deleted";
                 else
                     TempData["errorMessage"] = "Librarian wasn't deleted";

@@ -13,6 +13,47 @@ namespace LibraryWebSite.Controllers
     {
         private Logger _logger = LogManager.GetCurrentClassLogger();
 
+        private IPreOrderRepository _preOrderRepository;
+        private IOrderRepository _orderRepository;
+
+        public LibrarianController() { }
+
+        public LibrarianController(IPreOrderRepository preOrderRepository, IOrderRepository orderRepository)
+        {
+            PreOrderRepository = preOrderRepository;
+            OrderRepository = orderRepository;
+        }
+
+        public IPreOrderRepository PreOrderRepository
+        {
+            get
+            {
+                if (_preOrderRepository == null)
+                    _preOrderRepository = new PreOrderRepository();
+
+                return _preOrderRepository;
+            }
+            private set
+            {
+                _preOrderRepository = value;
+            }
+        }
+
+        public IOrderRepository OrderRepository
+        {
+            get
+            {
+                if (_orderRepository == null)
+                    _orderRepository = new OrderRepository();
+
+                return _orderRepository;
+            }
+            private set
+            {
+                _orderRepository = value;
+            }
+        }
+
         //GET : /Librarian/Index
         [Authorize(Roles = "Librarian")]
         public ActionResult Index()
@@ -25,10 +66,10 @@ namespace LibraryWebSite.Controllers
                     return RedirectToAction("Index", "Home", new { page = 1 });
                 }
 
-                List<PreOrder> preOrders = DBRepository.GetActivePreOrders().ToList();
+                List<PreOrder> preOrders = PreOrderRepository.GetActivePreOrders().ToList();
                 preOrders.Sort((elem1, elem2) => (elem1.Reader.FirstName + elem1.Reader.LastName).CompareTo((elem2.Reader.FirstName + elem2.Reader.LastName)));
                 ViewBag.PreOrders = preOrders;
-                ViewBag.Orders = DBRepository.GetActiveOrders().ToList();
+                ViewBag.Orders = OrderRepository.GetActiveOrders().ToList();
             }
             catch (Exception ex)
             {
@@ -47,14 +88,14 @@ namespace LibraryWebSite.Controllers
                 if (id == null)
                     return RedirectToAction("Index", "Librarian");
 
-                PreOrder preOrder = DBRepository.GetActivePreOrderById((int)id);
+                PreOrder preOrder = PreOrderRepository.GetActivePreOrderById((int)id);
 
                 if (preOrder == null)
                     return RedirectToAction("Index", "Librarian");
 
-                DBRepository.DisablePreOrder((int)id);
+                PreOrderRepository.DisablePreOrder((int)id);
 
-                DBRepository.AddNewOrder(preOrder, User.Identity.GetUserId<int>());
+                OrderRepository.AddNewOrder(preOrder, User.Identity.GetUserId<int>());
             }
             catch (Exception ex)
             {
@@ -73,12 +114,12 @@ namespace LibraryWebSite.Controllers
                 if (id == null)
                     return RedirectToAction("Index", "Librarian");
 
-                PreOrder preOrder = DBRepository.GetActivePreOrderById((int)id);
+                PreOrder preOrder = PreOrderRepository.GetActivePreOrderById((int)id);
 
                 if (preOrder == null)
                     return RedirectToAction("Index", "Librarian");
 
-                DBRepository.DisablePreOrder((int)id);
+                PreOrderRepository.DisablePreOrder((int)id);
 
                 return RedirectToAction("Index", "Librarian");
             }
@@ -99,12 +140,12 @@ namespace LibraryWebSite.Controllers
                 if (id == null)
                     return RedirectToAction("Index", "Librarian");
 
-                Order order = DBRepository.GetActiveOrderById((int)id);
+                Order order = OrderRepository.GetActiveOrderById((int)id);
 
                 if (order == null)
                     return RedirectToAction("Index", "Librarian");
-                
-                DBRepository.CloseOrder((int)id);
+
+                OrderRepository.CloseOrder((int)id);
 
                 return RedirectToAction("Index", "Librarian");
             }
