@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNet.Identity
-@using LibraryDAL
+@using LibraryDAL.Models
 
 @if (Request.IsAuthenticated)
 {
@@ -9,7 +9,7 @@
 
     <ul class="nav navbar-nav navbar-right">
         <li>
-            @Html.ActionLink("Hello " + DBRepository.GetReaderById(User.Identity.GetUserId<int>()).FirstName + "!", "ReaderInfo", "Home", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+            @Html.ActionLink("Hello " + DependencyResolver.Current.GetService<IReaderRepository>().GetReaderById(User.Identity.GetUserId<int>()).FirstName + "!", "ReaderInfo", "Home", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
         </li>
         <li>
             @Html.ActionLink("Basket", "Basket", "Home", null, new { @class = "nav-link" })

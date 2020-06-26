@@ -38,10 +38,7 @@ namespace LibraryWebSite.Controllers
         {
             get
             {
-                if (_bookRepository == null)
-                    _bookRepository = new BookRepository();
-
-                return _bookRepository;
+                return _bookRepository ?? DependencyResolver.Current.GetService<IBookRepository>();
             }
             private set 
             { 
@@ -53,10 +50,7 @@ namespace LibraryWebSite.Controllers
         {
             get
             {
-                if (_readerRepository == null)
-                    _readerRepository = new ReaderRepository();
-
-                return _readerRepository;
+                return _readerRepository ?? DependencyResolver.Current.GetService<IReaderRepository>();
             }
             private set
             {
@@ -68,10 +62,7 @@ namespace LibraryWebSite.Controllers
         {
             get
             {
-                if (_librarianRepository == null)
-                    _librarianRepository = new LibrarianRepository();
-
-                return _librarianRepository;
+                return _librarianRepository ?? DependencyResolver.Current.GetService<ILibrarianRepository>();
             }
             private set
             {
@@ -83,10 +74,7 @@ namespace LibraryWebSite.Controllers
         {
             get
             {
-                if (_preOrderRepository == null)
-                    _preOrderRepository = new PreOrderRepository();
-
-                return _preOrderRepository;
+                return _preOrderRepository ?? DependencyResolver.Current.GetService<IPreOrderRepository>();
             }
             private set
             {
@@ -98,10 +86,7 @@ namespace LibraryWebSite.Controllers
         {
             get
             {
-                if (_orderRepository == null)
-                    _orderRepository = new OrderRepository();
-
-                return _orderRepository;
+                return _orderRepository ?? DependencyResolver.Current.GetService<IOrderRepository>();
             }
             private set
             {

@@ -36,9 +36,9 @@ namespace LibraryWebSite.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -58,10 +58,7 @@ namespace LibraryWebSite.Controllers
         {
             get
             {
-                if (_dbRepository == null)
-                    _dbRepository = new DBRepository();
-
-                return _dbRepository;
+                return _dbRepository ?? DependencyResolver.Current.GetService<IDBRepository>();
             }
 
             set
@@ -179,12 +176,6 @@ namespace LibraryWebSite.Controllers
                 {
                     _userManager.Dispose();
                     _userManager = null;
-                }
-
-                if (_signInManager != null)
-                {
-                    _signInManager.Dispose();
-                    _signInManager = null;
                 }
             }
 

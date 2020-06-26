@@ -5,7 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using LibraryDAL.Models;
 
-namespace LibraryDAL
+namespace LibraryDAL.Models
 {
     /// <summary>
     /// This is repository return data in database.
