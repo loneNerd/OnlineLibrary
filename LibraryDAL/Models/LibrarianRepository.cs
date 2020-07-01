@@ -32,7 +32,7 @@ namespace LibraryDAL.Models
         /// <summary>
         /// Add new librarian to database.
         /// </summary>
-        /// <param name="book">New librarian.</param>
+        /// <param name="librarian">New librarian.</param>
         /// <param name="password">Librarian password.</param>
         /// <returns>True - if new librarian added, false - if not.</returns>
         public bool AddNewLibrarian(DBUser librarian, string password)

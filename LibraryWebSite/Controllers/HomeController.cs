@@ -22,16 +22,18 @@ namespace LibraryWebSite.Controllers
         private ILibrarianRepository _librarianRepository;
         private IPreOrderRepository _preOrderRepository;
         private IOrderRepository _orderRepository;
+        private IDBRepository _dbRepository;
 
         public HomeController() { }
 
-        public HomeController(IBookRepository bookRepository, IReaderRepository readerRepository, ILibrarianRepository librarianRepository, IPreOrderRepository preOrderRepository, IOrderRepository orderRepository)
+        public HomeController(IBookRepository bookRepository, IReaderRepository readerRepository, ILibrarianRepository librarianRepository, IPreOrderRepository preOrderRepository, IOrderRepository orderRepository, IDBRepository dBRepository)
         {
             BookRepository = bookRepository;
             ReaderRepository = readerRepository;
             LibrarianRepository = librarianRepository;
             PreOrderRepository = preOrderRepository;
             OrderRepository = orderRepository;
+            DBRepository = dBRepository;
         }
 
         public IBookRepository BookRepository
@@ -88,9 +90,23 @@ namespace LibraryWebSite.Controllers
             {
                 return _orderRepository ?? DependencyResolver.Current.GetService<IOrderRepository>();
             }
+
             private set
             {
                 _orderRepository = value;
+            }
+        }
+
+        public IDBRepository DBRepository
+        {
+            get
+            {
+                return _dbRepository ?? DependencyResolver.Current.GetService<IDBRepository>();
+            }
+            
+            private set
+            {
+                _dbRepository = value;
             }
         }
 
@@ -103,45 +119,33 @@ namespace LibraryWebSite.Controllers
                     return RedirectToAction("Index", "Admin");
                 else if (User.IsInRole("Librarian"))
                     return RedirectToAction("Index", "Librarian");
-                
+
+                ViewBag.Title = "Catalog";
+
                 if (page == null)
                     page = 1;
 
-                List<Book> books;
+                IEnumerable<Book> books = BookRepository.GetBooks();
 
-                switch (_sort)
+                if (books != null)
                 {
-                    case "author":
-                        books = BookRepository.GetBooks().OrderBy(book => book.Author).ToList();
-                        break;
-                    case "publisher":
-                        books = BookRepository.GetBooks().OrderBy(book => book.Publisher).ToList();
-                        break;
-                    case "publicationDate":
-                        books = BookRepository.GetBooks().OrderBy(book => book.PublicationDate).ToList();
-                        books.Sort((book1, book2) => DateTime.Parse(book1.PublicationDate).CompareTo(DateTime.Parse(book2.PublicationDate)));
-                        break;
-                    case "name":
-                    default:
-                        books = BookRepository.GetBooks().OrderBy(book => book.Name).ToList();
-                        break;
-                }
-
-                int start = (((int)page - 1) * _catalogPageCapacity);
-                int end = books.Count - start > _catalogPageCapacity ? _catalogPageCapacity : books.Count - start;
-
-                BooksPageViewModels model = new BooksPageViewModels
-                {
-                    Books = books.GetRange(start, end),
-                    PageInfo = new PageInfo
+                    BooksPageViewModels model = new BooksPageViewModels
                     {
-                        CurrentPage = (int)page,
-                        ItemsPerPage = _catalogPageCapacity,
-                        TotalItems = books.Count,
-                    }
-                };
+                        Books = books,
+                        Sort = _sort,
+                        PageInfo = new PageInfo
+                        {
+                            CurrentPage = (int)page,
+                            ItemsPerPage = _catalogPageCapacity,
+                            TotalItems = books.Count(),
+                        }
+                    };
 
-                return View(model);
+                    if (page > model.PageInfo.TotalPages)
+                        return RedirectToAction("Index", "Home", new { page = 1 });
+
+                    return View(model);
+                }
             }
             catch(Exception ex)
             {
@@ -150,7 +154,8 @@ namespace LibraryWebSite.Controllers
 
             return View(new BooksPageViewModels
             {
-                Books = new List<Book>(),
+                Books = null,
+                Sort = _sort,
                 PageInfo = new PageInfo
                 {
                     CurrentPage = 1,
@@ -178,17 +183,21 @@ namespace LibraryWebSite.Controllers
         [Authorize]
         public ActionResult ReaderInfo()
         {
+            ReaderInfoViewModels readerInfo = new ReaderInfoViewModels();
+
             try
             {
-                ViewBag.PreOrders = PreOrderRepository.GetActivePreOrders().Where(elem => elem.Reader.Id == User.Identity.GetUserId<int>()).ToList();
-                ViewBag.Orders = OrderRepository.GetActiveOrders().Where(elem => elem.Reader.Id == User.Identity.GetUserId<int>()).ToList();
+                ViewBag.Title = "Info";
+                readerInfo.Orders = OrderRepository.GetActiveOrders().Where(elem => elem.Reader.Id == User.Identity.GetUserId<int>());
+                readerInfo.PreOrders = PreOrderRepository.GetActivePreOrders().Where(elem => elem.Reader.Id == User.Identity.GetUserId<int>());
+                readerInfo.User = DBRepository.GetUserById(User.Identity.GetUserId<int>());
             }
             catch (Exception ex)
             {
                 _logger.Error(ex.Message);
             }
 
-            return View();
+            return View(readerInfo);
         }
 
         //GET : Home/BookInfo
@@ -199,10 +208,12 @@ namespace LibraryWebSite.Controllers
                 if (id == null)
                     return RedirectToAction("Index", "Home", new { page = 1 });
 
+                ViewBag.Title = "Book Info";
+
                 var book = BookRepository.GetBookById((int)id);
 
                 if (book == null)
-                    return RedirectToAction("Index", "Home", new { page = 1 });
+                    throw new ArgumentException("IDs on page and database don't match");
 
                 return View(book);
             }
@@ -220,14 +231,15 @@ namespace LibraryWebSite.Controllers
         {
             try
             {
-                ViewBag.Books = GetPreOrder().Select(elem => elem.Book).ToList();
+                ViewBag.Title = "Basket";
+                return View(GetPreOrder().Select(elem => elem.Book));
             }
             catch(Exception ex)
             {
                 _logger.Error(ex.Message);
             }
 
-            return View();
+            return View(new List<Book>());
         }
 
         //GET : Home/Basket
@@ -242,7 +254,7 @@ namespace LibraryWebSite.Controllers
                 Book book = BookRepository.GetBookById((int)id);
 
                 if (book == null)
-                    return RedirectToAction("Index", "Home", new { page = 1 });
+                    throw new ArgumentException("IDs on page and database don't match");
 
                 GetPreOrder().Add(new PreOrder
                 {
@@ -273,7 +285,7 @@ namespace LibraryWebSite.Controllers
                 PreOrder book = GetPreOrder().Find(elem => elem.Book.BookID == id);
 
                 if (book == null)
-                    return RedirectToAction("Basket", "Home");
+                    throw new ArgumentException("IDs on page and database don't match");
 
                 GetPreOrder().Remove(book);
             }
@@ -319,29 +331,31 @@ namespace LibraryWebSite.Controllers
                 if (string.IsNullOrWhiteSpace(request) || page == null)
                     return RedirectToAction("Index", "Home", new { page = 1 });
 
+                ViewBag.Title = "Basket";
                 ViewBag.Request = request;
 
-                List<Book> books = BookRepository.GetBooks()
-                    .Where(elem => elem.Name.ToLower().Contains(request.ToLower()) || elem.Author.ToLower().Contains(request.ToLower())).ToList();
+                IEnumerable<Book> books = BookRepository.GetBooks()
+                    .Where(elem => elem.Name.ToLower().Contains(request.ToLower()) || elem.Author.ToLower().Contains(request.ToLower()));
 
-                if (books.Count / _searchPageCapacity < page)
-                    return RedirectToAction("Index", "Home", new { page = 1 });
-
-                int start = (((int)page - 1) * _searchPageCapacity);
-                int end = books.Count - start > _searchPageCapacity ? _searchPageCapacity : books.Count - start;
-
-                BooksPageViewModels model = new BooksPageViewModels
+                if (books != null)
                 {
-                    Books = books.GetRange(start, end),
-                    PageInfo = new PageInfo
+                    BooksPageViewModels model = new BooksPageViewModels
                     {
-                        CurrentPage = (int)page,
-                        ItemsPerPage = _searchPageCapacity,
-                        TotalItems = books.Count,
-                    }
-                };
+                        Books = books,
+                        Sort = _sort,
+                        PageInfo = new PageInfo
+                        {
+                            CurrentPage = (int)page,
+                            ItemsPerPage = _searchPageCapacity,
+                            TotalItems = books.Count(),
+                        }
+                    };
 
-                return View(model);
+                    if (page > model.PageInfo.TotalPages)
+                        return RedirectToAction("SearchResult", "Home", new { request, page = 1 });
+
+                    return View(model);
+                }
             }
             catch (Exception ex)
             {
@@ -350,11 +364,12 @@ namespace LibraryWebSite.Controllers
 
             return View(new BooksPageViewModels
             {
-                Books = new List<Book>(),
+                Books = null,
+                Sort = _sort,
                 PageInfo = new PageInfo
                 {
                     CurrentPage = 1,
-                    ItemsPerPage = _searchPageCapacity,
+                    ItemsPerPage = _catalogPageCapacity,
                     TotalItems = 0
                 }
             });

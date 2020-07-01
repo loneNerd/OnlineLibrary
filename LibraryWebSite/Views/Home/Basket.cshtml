@@ -1,12 +1,10 @@
 ﻿@using LibraryDAL.Models
-@{
-    ViewBag.Title = "Basket";
-    List<Book> books = ViewBag.Books;
-}
+
+@model IEnumerable<Book>
 
 <section>
     <div>
-        @if (books == null || books.Count == 0)
+        @if (Model == null || Model.Count() == 0)
         {
             <h1 class="text-lg-center">No Books Yet</h1>
         }
@@ -14,14 +12,18 @@
         {
             <table class="table table-striped table-bordered">
                 <tbody>
-                    @for (int i = 0; i < books.Count; ++i)
-                    {
-                        <tr>
-                            <td class="text-right">@(i + 1)</td>
-                            <td>@books[i].Name</td>
-                            <td>@books[i].Author</td>
-                            <td class="text-center">@Html.ActionLink("Remove", "RemoveFromBasket", "Home", new { id = books[i].BookID }, null)</td>
-                        </tr>
+
+                    @{
+                        int counter = 0;
+                        foreach (var book in Model)
+                        {
+                            <tr>
+                                <td class="text-right">@(++counter)</td>
+                                <td>@book.Name</td>
+                                <td>@book.Author</td>
+                                <td class="text-center">@Html.ActionLink("Remove", "RemoveFromBasket", "Home", new { id = book.BookID }, null)</td>
+                            </tr>
+                        }
                     }
                 </tbody>
             </table>

@@ -1,10 +1,8 @@
-﻿@using LibraryDAL.Models;
+﻿@using LibraryWebSite.Models;
+@model LibrarianViewModels
 
 @{
-    ViewBag.Title = "Main Page";
     Layout = "~/Views/Librarian/_LibrarianLayout.cshtml";
-    List<PreOrder> PreOrders = ViewBag.PreOrders;
-    List<Order> Orders = ViewBag.Orders;
 }
 
 <nav class="nav nav-pills nav-justified bottom-margin" role="tablist">
@@ -15,7 +13,7 @@
 <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="preOrders">
 
-        @if (PreOrders == null || PreOrders.Count == 0)
+        @if (Model.PreOrders == null || Model.PreOrders.Count() == 0)
         {
             <h1 class="text-lg-center">No Pre Orders Yet</h1>
         }
@@ -31,14 +29,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @for (int i = 0; i < PreOrders.Count; ++i)
+                    @foreach (var preOrder in Model.PreOrders)
                     {
                         <tr>
-                            <td class="text-right">@(i + 1)</td>
-                            <td class="text-right">@PreOrders[i].Reader.FirstName @PreOrders[i].Reader.LastName</td>
-                            <td class="text-right">@PreOrders[i].Book.ISBN10</td>
-                            <td class="text-center">@Html.ActionLink("Accept", "AcceptOrder", "Librarian", new { id = PreOrders[i].PreOrderID }, null)</td>
-                            <td class="text-center">@Html.ActionLink("Decline", "DeclineOrder", "Librarian", new { id = PreOrders[i].PreOrderID }, null)</td>
+                            <td class="text-right">@(preOrder.PreOrderID)</td>
+                            <td class="text-right">@preOrder.Reader.FirstName @preOrder.Reader.LastName</td>
+                            <td class="text-right">@preOrder.Book.ISBN10</td>
+                            <td class="text-center">@Html.ActionLink("Accept", "AcceptOrder", "Librarian", new { id = preOrder.PreOrderID }, null)</td>
+                            <td class="text-center">@Html.ActionLink("Decline", "DeclineOrder", "Librarian", new { id = preOrder.PreOrderID }, null)</td>
                         </tr>
                     }
                 </tbody>
@@ -47,7 +45,7 @@
     </div>
 
     <div role="tabpanel" class="tab-pane" id="orders">
-        @if (Orders == null || Orders.Count == 0)
+        @if (Model.Orders == null || Model.Orders.Count() == 0)
         {
             <h1 class="text-lg-center">No Orders Yet</h1>
         }
@@ -65,15 +63,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @for (int i = 0; i < Orders.Count; ++i)
+                    @foreach (var order in Model.Orders)
                     {
                         <tr>
-                            <td class="text-right">@(i + 1)</td>
-                            <td class="text-right">@Orders[i].Reader.FirstName @Orders[i].Reader.LastName</td>
-                            <td class="text-right">@Orders[i].Book.ISBN10</td>
-                            <td class="text-right">@Orders[i].ExpiredDay.ToString("dd MMMM yyyy")</td>
-                            <td class="text-right">@Orders[i].Penalty uah</td>
-                            <td class="text-right">@Html.ActionLink("Close", "CloseOrder", "Librarian", new { id = Orders[i].OrderID }, null)</td>
+                            <td class="text-right">@(order.OrderID)</td>
+                            <td class="text-right">@order.Reader.FirstName @order.Reader.LastName</td>
+                            <td class="text-right">@order.Book.ISBN10</td>
+                            <td class="text-right">@order.ExpiredDay.ToString("dd MMMM yyyy")</td>
+                            <td class="text-right">@order.Penalty uah</td>
+                            <td class="text-right">@Html.ActionLink("Close", "CloseOrder", "Librarian", new { id = order.OrderID }, null)</td>
                         </tr>
                     }
                 </tbody>

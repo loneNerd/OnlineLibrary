@@ -10,6 +10,7 @@ namespace LibraryDAL.Models
     {
         IEnumerable<DBUser> GetReaders();
         DBUser GetReaderById(int id);
+        bool AddNewReader(DBUser librarian, string password);
         bool ChangeReaderStatus(int id);
     }
 }

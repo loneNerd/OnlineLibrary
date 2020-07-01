@@ -73,6 +73,7 @@ namespace LibraryWebSite.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
+            ViewBag.Title = "Log in";
             return View();
         }
 
@@ -83,6 +84,7 @@ namespace LibraryWebSite.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
+            ViewBag.Title = "Log in";
             DBUser user = DBRepository.GetUsers().FirstOrDefault(elem => elem.Email == model.Email);
 
             if (user != null && user.IsBlock)
@@ -117,6 +119,7 @@ namespace LibraryWebSite.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            ViewBag.Title = "Register";
             return View();
         }
 
@@ -127,6 +130,7 @@ namespace LibraryWebSite.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
+            ViewBag.Title = "Register";
             if (ModelState.IsValid)
             {
                 var user = new DBUser

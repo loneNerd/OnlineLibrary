@@ -1,13 +1,6 @@
-﻿@using LibraryDAL.Models;
-@using LibraryDAL;
-@using Microsoft.AspNet.Identity;
+﻿@using LibraryWebSite.Models;
 
-@{
-    ViewBag.Title = "Info";
-    List<Order> Orders = ViewBag.Orders;
-    List<PreOrder> PreOrders = ViewBag.PreOrders;
-    DBUser user = DBRepository.GetReaderById(User.Identity.GetUserId<int>());
-}
+@model ReaderInfoViewModels
 
 <nav class="nav nav-pills nav-justified bottom-margin" role="tablist">
     <a class="nav-item nav-link active" href="#info" role="tab" data-toggle="tab">Info</a>
@@ -18,14 +11,22 @@
 <section>
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active top-margin text-center" id="info">
-            <p class="text-center btn btn-outline-primary">First name: @user.FirstName</p>
-            <p class="text-center btn btn-outline-primary">Second name: @user.LastName</p>
-            <p class="text-center btn btn-outline-primary">Email: @user.Email</p>
+            @if (Model.User != null)
+            {
+                <p class="text-center btn btn-outline-primary">First name: @Model.User.FirstName</p>
+                <p class="text-center btn btn-outline-primary">Second name: @Model.User.LastName</p>
+                <p class="text-center btn btn-outline-primary">Email: @Model.User.Email</p>
+            }
+            else
+            {
+                <h1 class="text-lg-center">No info about user</h1>
+            }
+
         </div>
 
         <div role="tabpanel" class="tab-pane" id="waitList">
 
-            @if (PreOrders == null || PreOrders.Count == 0)
+            @if (Model.PreOrders == null || Model.PreOrders.Count() == 0)
             {
                 <h1 class="text-lg-center">No books in wait list</h1>
             }
@@ -40,13 +41,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @for (int i = 0; i < PreOrders.Count; ++i)
-                        {
-                            <tr>
-                                <td class="text-right">@(i + 1)</td>
-                                <td class="text-right">@PreOrders[i].Book.Name</td>
-                                <td class="text-right">@PreOrders[i].Book.Author</td>
-                            </tr>
+                        @{
+                            int counter = 0;
+                            foreach (var preOrder in Model.PreOrders)
+                            {
+                                <tr>
+                                    <td class="text-right">@(++counter)</td>
+                                    <td class="text-right">@preOrder.Book.Name</td>
+                                    <td class="text-right">@preOrder.Book.Author</td>
+                                </tr>
+                            }
                         }
                     </tbody>
                 </table>
@@ -54,7 +58,7 @@
         </div>
 
         <div role="tabpanel" class="tab-pane" id="orders">
-            @if (Orders == null || Orders.Count == 0)
+            @if (Model.Orders == null || Model.Orders.Count() == 0)
             {
                 <h1 class="text-lg-center">No active orders yet</h1>
             }
@@ -71,15 +75,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @for (int i = 0; i < Orders.Count; ++i)
-                        {
-                            <tr>
-                                <td class="text-right">@(i + 1)</td>
-                                <td class="text-right">@Orders[i].Book.Name</td>
-                                <td class="text-right">@Orders[i].Book.Author</td>
-                                <td class="text-right">@Orders[i].ExpiredDay.ToString("dd MMMM yyyy")</td>
-                                <td class="text-right">@Orders[i].Penalty uah</td>
-                            </tr>
+                        @{
+                            int counter = 0;
+                            foreach (var order in Model.Orders)
+                            {
+                                <tr>
+                                    <td class="text-right">@(++counter)</td>
+                                    <td class="text-right">@order.Book.Name</td>
+                                    <td class="text-right">@order.Book.Author</td>
+                                    <td class="text-right">@order.ExpiredDay.ToString("dd MMMM yyyy")</td>
+                                    <td class="text-right">@order.Penalty uah</td>
+                                </tr>
+                            }
                         }
                     </tbody>
                 </table>

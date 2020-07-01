@@ -202,9 +202,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AdminViewModels.cs" />
     <Compile Include="Models\BooksPageViewModels.cs" />
+    <Compile Include="Models\LibrarianViewModels.cs" />
     <Compile Include="Models\PageInfo.cs" />
     <Compile Include="HtmlHelpers\PagingHelpers.cs" />
+    <Compile Include="Models\ReaderInfoViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Util\NinjectRegistrations.cs" />
@@ -303,6 +306,7 @@
     <Content Include="Views\Home\Basket.cshtml" />
     <Content Include="Views\Librarian\_LibrarianLayout.cshtml" />
     <Content Include="Views\Home\SearchResult.cshtml" />
+    <Content Include="Views\Admin\CreateReader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

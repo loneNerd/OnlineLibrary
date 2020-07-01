@@ -65,6 +65,10 @@ namespace LibraryWebSite.Controllers
         [Authorize(Roles = "Admin")]
         public ActionResult Index()
         {
+            ViewBag.Title = "Main Page";
+
+            AdminViewModels admin = new AdminViewModels();
+
             try
             {
                 if (!User.IsInRole("Admin"))
@@ -73,22 +77,24 @@ namespace LibraryWebSite.Controllers
                     return RedirectToAction("Index", "Home", new { page = 1 });
                 }
 
-                ViewBag.Books = BookRepository.GetBooks().ToList();
-                ViewBag.Users = ReaderRepository.GetReaders().ToList();
-                ViewBag.Librarians = LibrarianRepository.GetLibrarians().ToList();
+                admin.Books = BookRepository.GetBooks();
+                admin.Readers = ReaderRepository.GetReaders();
+                admin.Librarians = LibrarianRepository.GetLibrarians();
             }
             catch (Exception ex)
             {
                 _logger.Error(ex.Message);
             }
 
-            return View();
+            return View(admin);
         }
 
         //GET : /Admin/EditBook
         [Authorize(Roles = "Admin")]
         public ActionResult EditBook(int? id)
         {
+            ViewBag.Title = "Edit Book";
+
             try
             {
                 if (id == null)
@@ -120,6 +126,8 @@ namespace LibraryWebSite.Controllers
         [Authorize(Roles = "Admin")]
         public ActionResult EditBook(Book book)
         {
+            ViewBag.Title = "Edit Book";
+
             try
             {
                 if (!DateTime.TryParse(book.PublicationDate, out DateTime testTime) || DateTime.Parse(book.PublicationDate) > DateTime.Now)
@@ -145,7 +153,6 @@ namespace LibraryWebSite.Controllers
             catch(Exception ex)
             {
                 _logger.Error(ex.Message);
-                return View(book);
             }
             
             return View(book);
@@ -173,6 +180,49 @@ namespace LibraryWebSite.Controllers
             return RedirectToAction("Index", "Admin");
         }
 
+        //GET : Admin/CreateReader
+        [Authorize(Roles = "Admin")]
+        public ActionResult CreateReader()
+        {
+            ViewBag.Title = "Create Reader";
+            return View(new RegisterViewModel());
+        }
+
+        //GET : Admin/CreateReader
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult CreateReader(RegisterViewModel reader)
+        {
+            ViewBag.Title = "Create Reader";
+
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var user = new DBUser
+                    {
+                        FirstName = reader.FirstName,
+                        LastName = reader.LastName,
+                        UserName = reader.Email,
+                        Email = reader.Email
+                    };
+
+                    if (ReaderRepository.AddNewReader(user, reader.Password))
+                        TempData["message"] = "New reader added";
+                    else
+                        TempData["errorMessage"] = "New reader wasn't added";
+
+                    return RedirectToAction("Index", "Admin");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex.Message);
+            }
+
+            return View(reader);
+        }
+
         //GET : /Admin/ChangeReaderStatus
         [Authorize(Roles = "Admin")]
         public ActionResult ChangeReaderStatus(int? id)
@@ -194,13 +244,19 @@ namespace LibraryWebSite.Controllers
 
         //GET : Admin/CreateLibrarian
         [Authorize(Roles = "Admin")]
-        public ActionResult CreateLibrarian() => View(new RegisterViewModel());
+        public ActionResult CreateLibrarian()
+        {
+            ViewBag.Title = "Create Librarian";
+            return View(new RegisterViewModel());
+        }
 
         //GET : Admin/CreateLibrarian
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public ActionResult CreateLibrarian(RegisterViewModel librarian)
         {
+            ViewBag.Title = "Create Librarian";
+
             try
             {
                 if (ModelState.IsValid)

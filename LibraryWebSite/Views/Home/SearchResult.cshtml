@@ -1,12 +1,7 @@
-﻿@using LibraryDAL.Models
-@using LibraryWebSite.Models
+﻿@using LibraryWebSite.Models
 @using LibraryWebSite.HtmlHelpers
 
 @model BooksPageViewModels
-
-@{
-    ViewBag.Title = "Basket";
-}
 
 <section>
     @Html.ActionLink("Back to catalog", "Index", new { page = 1 }, new { @class = "btn btn-secondary" })

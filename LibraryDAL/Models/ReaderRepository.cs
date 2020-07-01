@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace LibraryDAL.Models
 {
@@ -28,6 +28,26 @@ namespace LibraryDAL.Models
         /// <param name="id">ID of reader.</param>
         /// <returns>If database contains reader return DBUser, else return null.</returns>
         public DBUser GetReaderById(int id) => DatabaseContext.Users.Find(id);
+
+        /// <summary>
+        /// Add new reader to database.
+        /// </summary>
+        /// <param name="reader">New reader.</param>
+        /// <param name="password">Reader password.</param>
+        /// <returns>True - if new reader added, false - if not.</returns>
+        public bool AddNewReader(DBUser reader, string password)
+        {
+            if (reader == null)
+                throw new ArgumentNullException($"Parametr {nameof(reader)} is null");
+
+            var userManager = new UserManager<DBUser, int>(new UserStore<DBUser, DBRole, int, DBLogin, DBUserRole, DBClaim>(DatabaseContext));
+
+            userManager.Create(reader, password);
+            userManager.AddToRole(reader.Id, "Reader");
+            DatabaseContext.SaveChanges();
+
+            return true;
+        }
 
         /// <summary>
         /// Method change reader status.

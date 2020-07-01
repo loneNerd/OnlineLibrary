@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 using NLog;
 using LibraryDAL;
 using LibraryDAL.Models;
+using LibraryWebSite.Models;
 
 namespace LibraryWebSite.Controllers
 {
@@ -52,6 +53,10 @@ namespace LibraryWebSite.Controllers
         [Authorize(Roles = "Librarian")]
         public ActionResult Index()
         {
+            ViewBag.Title = "Main Page";
+
+            LibrarianViewModels model = new LibrarianViewModels();
+
             try
             {
                 if (!User.IsInRole("Librarian"))
@@ -62,15 +67,15 @@ namespace LibraryWebSite.Controllers
 
                 List<PreOrder> preOrders = PreOrderRepository.GetActivePreOrders().ToList();
                 preOrders.Sort((elem1, elem2) => (elem1.Reader.FirstName + elem1.Reader.LastName).CompareTo((elem2.Reader.FirstName + elem2.Reader.LastName)));
-                ViewBag.PreOrders = preOrders;
-                ViewBag.Orders = OrderRepository.GetActiveOrders().ToList();
+                model.PreOrders = preOrders;
+                model.Orders = OrderRepository.GetActiveOrders();
             }
             catch (Exception ex)
             {
                 _logger.Error(ex.Message);
             }
 
-            return View();
+            return View(model);
         }
 
         //GET : /Librarian/Index

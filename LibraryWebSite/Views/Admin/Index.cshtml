@@ -1,10 +1,8 @@
-﻿@using LibraryDAL.Models
+﻿@using LibraryWebSite.Models
+@model AdminViewModels
+    
 @{
-    ViewBag.Title = "Main Page";
     Layout = "~/Views/Admin/_AdminLayout.cshtml";
-    List<Book> Books = ViewBag.Books;
-    List<DBUser> Readers = ViewBag.Users;
-    List<DBUser> Librarians = ViewBag.Librarians;
 }
 
 <section>
@@ -29,7 +27,7 @@
                 @Html.ActionLink("Add book", "EditBook", new { id = 0 },
                     new { @class = "btn btn-secondary" })
             </div>
-            @if (Books == null || Books.Count == 0)
+            @if (Model.Books == null || Model.Books.Count() == 0)
             {
                 <h1 class="text-lg-center">No Books Yet</h1>
             }
@@ -46,15 +44,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @for (int i = 0; i < Books.Count; ++i)
+                        @foreach (var book in Model.Books)
                         {
                             <tr>
-                                <td class="text-right">@(i + 1)</td>
-                                <td>@Books[i].Name</td>
-                                <td>@Books[i].Author</td>
-                                <td class="text-center">@Books[i].InStock</td>
-                                <td class="text-center">@Html.ActionLink("Edit", "EditBook", new { id = Books[i].BookID })</td>
-                                <td class="text-center">@Html.ActionLink("Delete", "DeleteBook", new { id = Books[i].BookID })</td>
+                                <td class="text-right">@(book.BookID)</td>
+                                <td>@book.Name</td>
+                                <td>@book.Author</td>
+                                <td class="text-center">@book.InStock</td>
+                                <td class="text-center">@Html.ActionLink("Edit", "EditBook", new { id = book.BookID })</td>
+                                <td class="text-center">@Html.ActionLink("Delete", "DeleteBook", new { id = book.BookID })</td>
                             </tr>
                         }
                     </tbody>
@@ -63,7 +61,10 @@
         </div>
 
         <div role="tabpanel" class="tab-pane" id="readers">
-            @if (Readers == null || Readers.Count == 0)
+            <div class="card-header">
+                @Html.ActionLink("Add reader", "CreateReader", null, new { @class = "btn btn-secondary" })
+            </div>
+            @if (Model.Readers == null || Model.Readers.Count() == 0)
             {
                 <h1 class="text-lg-center">No Readers Yet</h1>
             }
@@ -80,21 +81,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @for (int i = 0; i < Readers.Count; ++i)
+                        @foreach (var reader in Model.Readers)
                         {
                             <tr>
-                                <td class="text-right">@(i + 1)</td>
-                                <td>@Readers[i].FirstName @Readers[i].LastName</td>
-                                <td>@Readers[i].Email</td>
-                                @if (Readers[i].IsBlock)
+                                <td class="text-right">@(reader.Id)</td>
+                                <td>@reader.FirstName @reader.LastName</td>
+                                <td>@reader.Email</td>
+                                @if (reader.IsBlock)
                                 {
                                     <td class="text-center">Block</td>
-                                    <td class="text-center">@Html.ActionLink("Unblock", "ChangeReaderStatus", new { id = Readers[i].Id })</td>
+                                    <td class="text-center">@Html.ActionLink("Unblock", "ChangeReaderStatus", new { id = reader.Id })</td>
                                 }
                                 else
                                 {
                                     <td class="text-center">Active</td>
-                                    <td class="text-center">@Html.ActionLink("Block", "ChangeReaderStatus", new { id = Readers[i].Id })</td>
+                                    <td class="text-center">@Html.ActionLink("Block", "ChangeReaderStatus", new { id = reader.Id })</td>
                                 }
                             </tr>
                         }
@@ -107,7 +108,7 @@
             <div class="card-header">
                 @Html.ActionLink("Add librarian", "CreateLibrarian", null, new { @class = "btn btn-secondary" })
             </div>
-            @if (Librarians == null || Librarians.Count == 0)
+            @if (Model.Librarians == null || Model.Librarians.Count() == 0)
             {
                 <h1 class="text-lg-center">No Librarians Yet</h1>
             }
@@ -123,13 +124,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @for (int i = 0; i < Librarians.Count; ++i)
+                        @foreach (var librarian in Model.Librarians)
                         {
                             <tr>
-                                <td class="text-right">@(i + 1)</td>
-                                <td>@Librarians[i].FirstName @Librarians[i].LastName</td>
-                                <td>@Librarians[i].Email</td>
-                                <td class="text-center">@Html.ActionLink("Delete", "DeleteLibrarian", new { id = Librarians[i].Id })</td>
+                                <td class="text-right">@(librarian.Id)</td>
+                                <td>@librarian.FirstName @librarian.LastName</td>
+                                <td>@librarian.Email</td>
+                                <td class="text-center">@Html.ActionLink("Delete", "DeleteLibrarian", new { id = librarian.Id })</td>
                             </tr>
                         }
                     </tbody>

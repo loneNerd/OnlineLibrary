@@ -14,7 +14,7 @@ namespace LibraryWebSite.Models
         {
             get
             {
-                return TotalItems / ItemsPerPage;
+                return (int)Math.Ceiling((decimal)TotalItems / ItemsPerPage);
             }
         }
     }
